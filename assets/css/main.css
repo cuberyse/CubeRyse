@@ -63,7 +63,7 @@ p
     padding: 8px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 .defaultCTA:active, .defaultCTA:hover
 {
