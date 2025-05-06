@@ -49,7 +49,7 @@ p
 .mainText
 {
     font-size: 64px;
-    color: #114488;
+    color: #cccccc;
 }
 .footerText
 {
@@ -62,7 +62,7 @@ p
 }
 .defaultCTA
 {
-    font-size: 22px;
+    font-size: 16px;
     background: rgba(255, 255, 255, 0.1);
     color: #eeeeee;
 
@@ -89,7 +89,7 @@ p
 
 .iconSocial
 {
-    font-size: 22px;
+    font-size: 24px;
     padding-left: 0;
     padding-right: 0;
     padding: 10px;
