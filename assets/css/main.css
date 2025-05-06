@@ -84,6 +84,7 @@ p
 .iconSocial
 {
     font-size: 14px;
-    color: red;
+    padding-left: 0;
+    padding-right: 0;
     padding: 4px;
 }
