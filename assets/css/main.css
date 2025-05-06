@@ -57,11 +57,11 @@ p
 
 .mainLogoMid
 {
-    height: 30vw;
+    height: 25vw;
 }
 .defaultCTA
 {
-    font-size: 18px;
+    font-size: 22px;
     background: rgba(255, 255, 255, 0.1);
     color: #eeeeee;
 
@@ -88,10 +88,10 @@ p
 
 .iconSocial
 {
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 0;
     padding-right: 0;
-    padding: 10px;
+    padding: 8px;
 
     background: rgba(0, 0, 0, 0);
 }
