@@ -49,11 +49,15 @@ p
 .mainText
 {
     font-size: 64px;
-    text-wrap: wrap;
 }
 .footerText
 {
     font-size: 14px;
+}
+
+.mainLogoMid
+{
+    height: 30vw;
 }
 .defaultCTA
 {
