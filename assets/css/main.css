@@ -7,6 +7,8 @@ body
     padding: 32px;
 
     margin: 0;
+
+    font-size: 16px;
 }
 
 header, footer, main
@@ -49,7 +51,6 @@ p
 .mainText
 {
     font-size: 64px;
-    color: #cccccc;
 }
 .footerText
 {
