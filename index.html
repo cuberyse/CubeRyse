@@ -1,122 +1,94 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CubeRyse - Software Development & Consultancy</title>
 
-  <link rel="icon" type="image/x-icon" href="cr-fav-ico.png">
-  
-  <title>CubeRyse – Software Development & Consultancy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 2rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
-    header img {
-      height: 48px;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    h1, h2, h3 {
-      color: #111;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    footer {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
-    }
-    .cta {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #000;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-  </style>
+    <link rel="icon" type="image/x-icon" href="cr-fav-ico.png">
+
+    <style>
+        body
+        {
+            background: #000009;
+            color: #eeeeee;
+
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 64px;
+        }
+		header
+		{
+			display: block;
+		}
+		main
+		{
+			display: block;
+		}
+		footer
+		{
+			display: block;
+			text-align: center;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+        .headerText
+        {
+            font-size: 16px;
+        }
+        .mainText
+        {
+            font-size: 96px;
+        }
+        .footerText
+        {
+            font-size: 16px;
+        }
+        .defaultCTA
+        {
+            font-size: 20px;
+			background: rgba(255, 255, 255, 0.1);
+			color: #eeeeee;
+
+			padding: 8px;
+			padding-left: 16px;
+			padding-right: 16px;
+			border-radius: 8px;
+        }
+		.defaultCTA:active, .defaultCTA:hover
+		{
+			background: rgba(255, 255, 255, 0.2);
+			color: #ffffff;
+		}
+
+		.logoAbstract
+		{
+			height: 48px;
+		}
+		.logoWritten
+		{
+			height: 32px;
+			padding: 8px;
+		}
+    </style>
 </head>
 <body>
-  <header>
-    <img src="cr-fav-ico.png" alt="CubeRyse Logo">
-    <nav>
-      <a href="#contact" class="cta">Contact Us</a>
-    </nav>
-  </header>
-  <main class="container">
-    <section>
-      <h1>Engineering Brilliance</h1>
-      <p>We craft tailored software and digital solutions for businesses ready to scale, adapt, and innovate.</p>
-    </section>
-    <section>
-      <h2>🚀 What We Do</h2>
-      <ul>
-        <li><strong>Custom Software Development:</strong> Web, mobile, and cloud apps built to scale.</li>
-        <li><strong>Tech Consultancy:</strong> Strategic solutions from architecture to process optimization.</li>
-        <li><strong>Team Augmentation:</strong> Extend your team with experienced engineers and agile experts.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>🛠️ Technologies We Love</h2>
-      <p>React, Vue, Angular, Node.js, Python, Java, AWS, Azure, GCP, Docker, Kubernetes, GitHub Actions.</p>
-    </section>
-    <section>
-      <h2>🌍 Why CubeRyse?</h2>
-      <ul>
-        <li>✅ Agile by Design</li>
-        <li>✅ Transparent Communication</li>
-        <li>✅ Results-Driven Delivery</li>
-        <li>✅ Global Clientele, Local Ethics</li>
-      </ul>
-    </section>
-    <section>
-      <h2>💬 Hear From Our Clients</h2>
-      <blockquote>
-        "CubeRyse helped us move fast and break nothing. Their consultants feel like an extension of our team." – A Happy CTO
-      </blockquote>
-      <blockquote>
-        "Our product wouldn't be where it is without CubeRyse. The team delivered under pressure, on time." – Startup Founder
-      </blockquote>
-    </section>
-    <section id="contact">
-      <h2>📩 Let’s Build Something Great</h2>
-      <p>Whether you're starting from scratch or scaling fast — we’re your trusted tech partner.</p>
-      <p>
-        <a href="mailto:hello@cuberyse.com">hello@cuberyse.com</a> <br>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    ⚙️ Powered by Code. Driven by Vision. <br>
-    © 2025 CubeRyse. All rights reserved.
-  </footer>
+    <header>
+		<a href="https://cuberyse.com/">
+        	<img src="logo-white.svg" alt="" class="logoAbstract">
+        	<img src="cuberyse.svg" alt="" class="logoWritten">
+		</a>
+    </header>
+    <main>
+        <p class="mainText">
+            Turning ideas into great products.
+			<br>
+			<a href="#" class="defaultCTA">Get in touch</a>
+        <p>
+    </main>
+    <footer>
+        <p class="footerText">© 2025 CubeRyse. All rights reserved.</p>
+    </footer>
 </body>
 </html>
