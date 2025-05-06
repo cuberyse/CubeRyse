@@ -49,10 +49,11 @@ p
 .mainText
 {
     font-size: 64px;
+    text-wrap: balance;
 }
 .footerText
 {
-    font-size: 12px;
+    font-size: 14px;
 }
 .defaultCTA
 {
@@ -83,10 +84,10 @@ p
 
 .iconSocial
 {
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 0;
     padding-right: 0;
-    padding: 12px;
+    padding: 10px;
 
     background: rgba(0, 0, 0, 0);
 }
