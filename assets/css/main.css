@@ -57,7 +57,7 @@ p {
 
 .defaultCTA {
     font-size: 16px;
-    background: #eeeeee;
+    background: #ffffff;
     color: #111111;
 
     padding: 12px;
@@ -65,14 +65,14 @@ p {
     padding-right: 14px;
     border-radius: 8px;
 
-    font-weight: lighter;
+    font-weight:normal;
 }
 
 .defaultCTA:active,
 .defaultCTA:hover {
-    background: #ffffff;
     color: #3366AA;
-    color: #0055BB;
+    background: #0055BB;
+    color: #ffffff;
 }
 
 .logoAbstract {
@@ -98,8 +98,8 @@ p {
 
 .iconSocial:active,
 .iconSocial:hover {
-    background: #333333;
-    color: #ffffff;
+    background: #ffffff;
+    color: #0055BB;
 }
 
 .accentText {
