@@ -1,6 +1,5 @@
-body
-{
-    background: #000033;
+body {
+    background: #000011;
     color: #eeeeee;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -11,85 +10,78 @@ body
     font-size: 16px;
 }
 
-header, footer, main
-{
+header,
+footer,
+main {
     margin: 0;
     padding: 8px;
 }
 
-header
-{
+header {
     display: block;
 }
-main
-{
+
+main {
     display: block;
 }
-footer
-{
+
+footer {
     display: block;
 
     text-align: center;
 }
 
-
-
-a
-{
+a {
     text-decoration: none;
 }
 
-p
-{
+p {
     margin: 0;
 }
 
-.headerText
-{
+.headerText {
     font-size: 12px;
 }
-.mainText
-{
+
+.mainText {
     font-size: 64px;
 }
-.footerText
-{
+
+.footerText {
     font-size: 12px;
 }
 
-.mainLogoMid
-{
+.mainLogoMid {
     height: 25vw;
 }
-.defaultCTA
-{
+
+.defaultCTA {
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #eeeeee;
+    background: rgba(255, 255, 255, 0.9);
+    color: #111111;
 
-    padding: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-}
-.defaultCTA:active, .defaultCTA:hover
-{
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    padding: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 8px;
 }
 
-.logoAbstract
-{
+.defaultCTA:active,
+.defaultCTA:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #3366AA;
+}
+
+.logoAbstract {
     height: 32px;
 }
-.logoWritten
-{
+
+.logoWritten {
     height: 20px;
     padding: 6px;
 }
 
-.iconSocial
-{
+.iconSocial {
     font-size: 24px;
     padding-left: 0;
     padding-right: 0;
@@ -98,7 +90,10 @@ p
     background: rgba(0, 0, 0, 0);
 }
 
-.accentColor
-{
+.accentText {
     color: #3366AA;
+}
+
+.accentBackground {
+    background: #3366AA;
 }
