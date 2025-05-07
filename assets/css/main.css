@@ -57,8 +57,6 @@ p {
 
 .defaultCTA {
     font-size: 16px;
-    background: #ffffff;
-    color: #111111;
 
     padding: 12px;
     padding-left: 14px;
@@ -66,13 +64,16 @@ p {
     border-radius: 8px;
 
     font-weight:normal;
+
+    background: #0055BB;
+    color: #ffffff;
 }
 
 .defaultCTA:active,
 .defaultCTA:hover {
     color: #3366AA;
-    background: #0055BB;
-    color: #ffffff;
+    background: #ffffff;
+    color: #111111;
 }
 
 .logoAbstract {
