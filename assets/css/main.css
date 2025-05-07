@@ -57,19 +57,22 @@ p {
 
 .defaultCTA {
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #eeeeee;
     color: #111111;
 
     padding: 12px;
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 8px;
+
+    font-weight: lighter;
 }
 
 .defaultCTA:active,
 .defaultCTA:hover {
-    background: rgba(255, 255, 255, 1);
+    background: #ffffff;
     color: #3366AA;
+    color: #0055BB;
 }
 
 .logoAbstract {
@@ -101,8 +104,9 @@ p {
 
 .accentText {
     color: #3366AA;
+    color: #0055BB;
 }
 
 .accentBackground {
-    background: #3366AA;
+    background: #0055BB;
 }
