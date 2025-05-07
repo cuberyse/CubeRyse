@@ -64,16 +64,31 @@ p {
     border-radius: 8px;
 
     font-weight:normal;
+}
 
+.accentCTA
+{
     background: #0055BB;
     color: #ffffff;
 }
 
-.defaultCTA:active,
-.defaultCTA:hover {
+.accentCTA:active,
+.accentCTA:hover {
     color: #3366AA;
     background: #ffffff;
     color: #111111;
+}
+
+.stdCTA
+{
+    background: #ffffff;
+    color: #111111;
+}
+
+.stdCTA:active, .stdCTA:hover
+{
+    background: #0055BB;
+    color: #ffffff;
 }
 
 .logoAbstract {
