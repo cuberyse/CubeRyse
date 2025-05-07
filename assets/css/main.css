@@ -97,3 +97,9 @@ p
 
     background: rgba(0, 0, 0, 0);
 }
+
+.accentColor
+{
+    color: #3366AA;
+    background: #3366AA;
+}
