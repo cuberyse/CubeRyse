@@ -3,18 +3,16 @@ body {
     color: #eeeeee;
 
     font-family: Arial, Helvetica, sans-serif;
-    padding: 32px;
 
     margin: 0;
 
     font-size: 16px;
 }
 
-header,
-footer,
-main {
+header, footer, main
+{
     margin: 0;
-    padding: 8px;
+    padding: 40px;
 }
 
 header {
@@ -43,16 +41,40 @@ p {
     font-size: 12px;
 }
 
-.mainText {
+.largeText
+{
     font-size: 64px;
+}
+
+.mediumText
+{
+    font-size: 28px;
+}
+
+.smallText
+{
+    font-size: 18px;
 }
 
 .footerText {
     font-size: 12px;
 }
 
-.mainLogoMid {
-    height: 25vw;
+.mainLogoMid
+{
+    height: 20vw;
+    float: right;
+    padding: 64px;
+}
+
+@media (orientation: portrait)
+{
+	.mainLogoMid
+	{
+		float: none;
+        padding: 8px;
+        height: 40vw;
+	}
 }
 
 .defaultCTA {
@@ -76,19 +98,21 @@ p {
 .accentCTA:hover {
     color: #3366AA;
     background: #ffffff;
-    color: #111111;
+    color: #ffffff;
+    background: #333333;
 }
 
 .stdCTA
 {
-    background: #ffffff;
-    color: #111111;
+    background: #111111;
+    color: #eeeeee;
 }
 
 .stdCTA:active, .stdCTA:hover
 {
     background: #0055BB;
     color: #ffffff;
+    background: #333333;
 }
 
 .logoAbstract {
@@ -108,21 +132,23 @@ p {
     font-size: 24px;
 
     display: inline-block;
-    width: 32px;
     text-align: center;
 }
 
-.iconSocial:active,
-.iconSocial:hover {
-    background: #ffffff;
+.iconSocial:active, .iconSocial:hover
+{
     color: #0055BB;
+    background: #333333;
+    background: #ffffff;
 }
 
-.accentText {
+.accentText
+{
     color: #3366AA;
     color: #0055BB;
 }
 
-.accentBackground {
+.accentBackground
+{
     background: #0055BB;
 }
