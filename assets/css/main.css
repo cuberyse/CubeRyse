@@ -1,3 +1,8 @@
+:root
+{
+    --accentColor: #0055BB;
+}
+
 body {
     background: #00000A;
     color: #eeeeee;
@@ -90,14 +95,13 @@ p {
 
 .accentCTA
 {
-    background: #0055BB;
+    background: var(--accentColor);
     color: #ffffff;
 }
 
-.accentCTA:active,
-.accentCTA:hover {
+.accentCTA:active, .accentCTA:hover
+{
     color: #3366AA;
-    background: #ffffff;
     color: #ffffff;
     background: #333333;
 }
@@ -110,7 +114,6 @@ p {
 
 .stdCTA:active, .stdCTA:hover
 {
-    background: #0055BB;
     color: #ffffff;
     background: #333333;
 }
@@ -137,18 +140,16 @@ p {
 
 .iconSocial:active, .iconSocial:hover
 {
-    color: #0055BB;
-    background: #333333;
+    color: var(--accentColor);
     background: #ffffff;
 }
 
 .accentText
 {
-    color: #3366AA;
-    color: #0055BB;
+    color: var(--accentColor);
 }
 
 .accentBackground
 {
-    background: #0055BB;
+    background: var(--accentColor);
 }
