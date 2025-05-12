@@ -11,65 +11,96 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<script src="https://kit.fontawesome.com/088b0b403f.js" crossorigin="anonymous"></script>
-
-
-
-<script>
-  const socialLinksHTML = `
-    <a href="https://www.facebook.com/cuberyse" class="iconSocial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-	
-	<a href="https://www.instagram.com/cuberyse/" class="iconSocial" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-	
-	<a href="https://www.linkedin.com/company/cuberyse/" class="iconSocial" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-	
-	<a href="https://x.com/cuberyse" class="iconSocial" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-  `;
-
-  document.getElementById('social-links-header').innerHTML = socialLinksHTML;
-  document.getElementById('social-links-footer').innerHTML = socialLinksHTML;
-</script>
 </head>
 
 <body>
 	<header>
-		<a href="https://cuberyse.com/">
+		<a href="https://cuberyse.com/" class="headerLogo">
 			<img src="assets/media/logo-white.svg" alt="" class="logoAbstract">
 			<img src="assets/media/cuberyse.svg" alt="" class="logoWritten">
 		</a>
 
-		<div id="social-links-header"></div>
+		<div class="iconSocial iconSocialHeader">
+			<a href="https://www.facebook.com/cuberyse" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+	
+			<a href="https://www.instagram.com/cuberyse/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	
+			<a href="https://www.linkedin.com/company/cuberyse/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+	
+			<a href="https://x.com/cuberyse" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+		</div>
 	</header>
 
 	<main>
 		<br>
+
+		<section class="sectionTop">
+			<img src="assets/media/logo-white.svg" alt="" class="mainLogoMid">
 		
-		<img src="assets/media/logo-white.svg" alt="" class="mainLogoMid">
-		
-		<br><br>
-
-		<p class="largeText">
-			Turning <span class="accentText">ideas</span> into amazing <span class="accentText">products</span>.
-		</p>	
-
-		<p class="mediumText">
-			<br>
-			We help entrepreneurs and founders grow their businesses by enabling them to iterate and improve on the go<span class="accentText">.</span>
-		</p>
-
-		<p class="smallText">
 			<br><br>
-			We help entrepreneurs and founders grow their businesses by enabling them to iterate and improve on the go.
-		</p>
+			
+			<h1 class="largeText">
+				Turning <span class="accentText">ideas</span> into amazing <span class="accentText">products</span>.
+			</h1>	
 
-		<br><br><br><br>
+			<h2 class="mediumText">
+				<br>
+				We help entrepreneurs and founders grow their businesses by enabling them to iterate and improve on the go<span class="accentText">.</span>
+			</h2>
 
-		<a href="#" class="defaultCTA accentCTA">Let's Talk!</a>
-    	<a href="#" class="defaultCTA stdCTA">Learn More</a>
+			<p class="smallText">
+				<br><br>
+				We help entrepreneurs and founders grow their businesses by enabling them to iterate and improve on the go.
+			</p>
+
+			<br><br><br><br>
+
+			<a href="#" class="defaultCTA accentCTA">Let's Talk!</a>
+			<a href="#" class="defaultCTA stdCTA">Learn More</a>
+		</section>
+
+		<section class="whatWeDo">
+
+			<h2>What We <span class="accentText">Do</span></h2>
+
+			<div class="sectionContent">
+				<div>
+					<h3>UI/UX</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure autem quod. Aliquid error perspiciatis quos laborum id, deserunt debitis exercitationem dignissimos praesentium earum sunt reprehenderit maiores voluptates eos! Nobis?</p>
+				</div>
+				<div>
+					<h3>Product Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corrupti quidem obcaecati ipsum nostrum vero, dolor laboriosam optio iste molestias temporibus officia voluptatum perspiciatis ipsam eaque. Ex nulla animi magni?</p>
+				</div>
+				<div>
+					<h3>Consultancy</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias nisi laborum fugiat perferendis praesentium excepturi earum nostrum quis cum suscipit impedit, asperiores magni incidunt soluta repellat minima, dolores minus ipsam!</p>
+				</div>
+			</div>
+		</section>
+
+		<!--
+		<h1>abc</h1>
+		<h2>abc</h2>
+		<h3>abc</h3>
+		<h4>abc</h4>
+		<h5>abc</h5>
+		<h6>abc</h6>
+		<p>abc</p>
+		-->
 
 	</main>
 
 	<footer>
-		<div id="social-links-footer"></div>
+		<div class="iconSocial iconSocialFooter">
+			<a href="https://www.facebook.com/cuberyse" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+	
+			<a href="https://www.instagram.com/cuberyse/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	
+			<a href="https://www.linkedin.com/company/cuberyse/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+	
+			<a href="https://x.com/cuberyse" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+		</div>
 
 		<br>
 
