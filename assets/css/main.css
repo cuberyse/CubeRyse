@@ -1,6 +1,7 @@
 :root
 {
     --accentColor: #0055BB;
+    --themeColor: #00000A;
 }
 
 body {
@@ -142,6 +143,14 @@ p {
     padding: 6px;
 }
 
+@media (orientation: portrait)
+{
+    .logoWritten
+    {
+        display: none;
+    }
+}
+
 .iconSocial
 {
     width: fit-content;
@@ -194,16 +203,19 @@ p {
     text-align: center;
     padding: 40px;
 
+    background: #eeeeee;
+    color: #111111;
 }
 
 .sectionContent
 {
     display: flex;
 
-    color: #111111;
-    background: #eeeeee;
-    border: #333333 solid 2px;
+    border: var(--themeColor) solid 2px;
+
     border-radius: 8px;
+
+    overflow: hidden;
 }
 
 .sectionContent div
@@ -212,19 +224,26 @@ p {
     padding: 8px;
 }
 
+.sectionContent div:hover, .sectionContent div:active
+{
+    background: var(--themeColor);
+    color: #eeeeee;
+}
+
 @media (orientation: portrait)
 {
     .sectionContent
-{
-    display: block;
-}
-.sectionContent div
-{
-    display: block;
-}
+    {
+        display: block;
+    }
+    .sectionContent div
+    {
+        display: block;
+    }
 }
 
 .sectionContent div p
 {
     text-align: justify;
+    padding: 8px;
 }
