@@ -11,6 +11,23 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<script src="https://kit.fontawesome.com/088b0b403f.js" crossorigin="anonymous"></script>
+
+
+
+<script>
+  const socialLinksHTML = `
+    <a href="https://www.facebook.com/cuberyse" class="iconSocial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+	
+	<a href="https://www.instagram.com/cuberyse/" class="iconSocial" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	
+	<a href="https://www.linkedin.com/company/cuberyse/" class="iconSocial" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+	
+	<a href="https://x.com/cuberyse" class="iconSocial" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  `;
+
+  document.getElementById('social-links-header').innerHTML = socialLinksHTML;
+  document.getElementById('social-links-footer').innerHTML = socialLinksHTML;
+</script>
 </head>
 
 <body>
@@ -19,6 +36,8 @@
 			<img src="assets/media/logo-white.svg" alt="" class="logoAbstract">
 			<img src="assets/media/cuberyse.svg" alt="" class="logoWritten">
 		</a>
+
+		<div id="social-links-header"></div>
 	</header>
 
 	<main>
@@ -50,20 +69,7 @@
 	</main>
 
 	<footer>
-		<p>
-			<a href="https://www.facebook.com/cuberyse" class="iconSocial" target="_blank">
-				<i class="fa-brands fa-facebook"></i>
-			</a>
-			<a href="https://www.instagram.com/cuberyse/" class="iconSocial" target="_blank">
-				<i class="fa-brands fa-instagram"></i>
-			</a>
-			<a href="https://www.linkedin.com/company/cuberyse/" class="iconSocial" target="_blank">
-				<i class="fa-brands fa-linkedin-in"></i>
-			</a>
-			<a href="https://x.com/cuberyse" class="iconSocial" target="_blank">
-				<i class="fa-brands fa-x-twitter"></i>
-			</a>
-		</p>
+		<div id="social-links-footer"></div>
 
 		<br>
 
