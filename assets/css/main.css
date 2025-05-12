@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #00000A;
+    background: var(--themeColor);
     color: #eeeeee;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -198,52 +198,134 @@ p {
     background: var(--accentColor);
 }
 
-.whatWeDo
+.defSection
 {
-    text-align: center;
+    display: block;
+    overflow: hidden;
     padding: 40px;
-
-    background: #eeeeee;
-    color: #111111;
 }
 
-.sectionContent
+.whatWeDo
+{
+    background: #000000;    
+}
+
+.sectionStripe div
+{
+    border-radius: 2px;
+}
+
+.sectionStripe div:hover, .sectionStripe div:active
+{
+    background: #aaa;
+}
+
+.sectionStripeStripe
 {
     display: flex;
+}
 
-    border: var(--themeColor) solid 2px;
-
-    border-radius: 8px;
-
+.sectionStripeStripe .sectionStripeStripeIcon, .sectionStripeStripe h3, .sectionStripeStripe p
+{
+    padding: 4px;
     overflow: hidden;
 }
 
-.sectionContent div
+.sectionStripeStripeIcon
 {
-    flex: 1;
-    padding: 8px;
+    padding: 0;
 }
 
-.sectionContent div:hover, .sectionContent div:active
+.sectionStripeStripeIcon img
 {
-    background: var(--themeColor);
-    color: #eeeeee;
+    height: 32px;
+    width: 64px;
+}
+
+.sectionStripeStripe .sectionStripeStripeIcon
+{
+    width: 32px;
+    flex: 1;
+}
+
+.sectionStripeStripe h3
+{
+flex: 2;
+font-size: 24px;
+}
+
+.sectionStripeStripe p
+{
+    flex: 4;
+    font-size: 16px;
+    padding: 8px;
+    text-align: justify;
 }
 
 @media (orientation: portrait)
 {
-    .sectionContent
+    .sectionStripeStripeIcon img
+{
+    height: 32px;
+    width: 32px;
+}
+    .sectionStripeStripe
     {
         display: block;
     }
-    .sectionContent div
+    .sectionStripeStripeIcon, .sectionStripeStripe h3
+    {
+        display: inline;
+        width: 50%;
+    }
+
+    .sectionStripeStripe h3
+    {
+        font-size: 18px;
+    }
+
+    .sectionStripeStripe p
     {
         display: block;
+        font-size: 12px;
     }
 }
 
-.sectionContent div p
+.aboutUs
 {
+    background: #eeeeee;
+    color: #000000;
+}
+
+.defSectionBox
+{
+    display: flex;
+    overflow: hidden;
+}
+
+.defSectionBox div
+{
+    flex: 1;
+    border-radius: 2px;
+
     text-align: justify;
     padding: 8px;
+}
+
+.defSectionBox div:hover, .defSectionBox div:active
+{
+    background: #111;
+    color: #eee;
+}
+
+@media (orientation: portrait)
+{
+    .defSectionBox
+    {
+        display: block;
+    }
+    .defSectionBox div
+    {
+        display: block;
+    }
 }
