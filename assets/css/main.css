@@ -259,11 +259,16 @@ p {
     display: flex;
     margin-top: 4px;
     margin-bottom: 16px;
+
+    border-radius: 4px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .sectionStripe:hover, .sectionStripe:active
 {
-   background: red;
+   background: rgba(255, 255, 255, 0.1)
 }
 
 .stripeSectionIcon, .stripeSectionHeading, .stripeSectionPara
@@ -283,7 +288,13 @@ p {
     padding: 8px;
 }
 
-.stripeSectionPara p
+.stripeSectionHeading, .stripeSectionHeading p
+{
+    font-size: 24px;
+    width: fit-content;
+}
+
+.stripeSectionPara, .stripeSectionPara p
 {
     font-size: 16px;
     text-align: justify;
@@ -315,7 +326,7 @@ p {
     }
     .stripeSectionHeading 
     {
-        display: inline;
+        display: inline-block;
     }
     .stripeSectionPara
     {
