@@ -292,7 +292,7 @@ header
 
     width: auto;
 
-    background: var(--themeColor);
+    background: rgba(0, 0, 0, 0.5)
 }
 
 @media (orientation: portrait)
@@ -375,27 +375,20 @@ main
 
 .whatWeDo
 {
-    background: #eeeeee;
-    color: #111;
-}
-
-.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
-{
-    background: rgba(255, 255, 255, 0.1);
-    background: #111;
     color: #eee;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .aboutUs
 {
-    background: #111;
     color: #eee;
+    background: rgba(0, 0, 0, 0.3);
+    background: #000;
 }
 
-.aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
+.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active, .aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
 {
-    background: #eeeeee;
-    color: #111;
+    background: rgba(0, 0, 0, 0.5)
 }
 
 /* Footer */
