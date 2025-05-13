@@ -62,7 +62,6 @@ a
 
 .accentCTA:active, .accentCTA:hover
 {
-    color: #3366AA;
     color: #ffffff;
     background: #333333;
 }
@@ -365,13 +364,27 @@ main
 
 .whatWeDo
 {
-    background: #000000;
+    background: #eeeeee;
+    color: #111;
+}
+
+.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
+{
+    background: rgba(255, 255, 255, 0.1);
+    background: #111;
+    color: #eee;
 }
 
 .aboutUs
 {
+    background: #111;
+    color: #eee;
+}
+
+.aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
+{
     background: #eeeeee;
-    color: #000000;
+    color: #111;
 }
 
 /* Footer */
