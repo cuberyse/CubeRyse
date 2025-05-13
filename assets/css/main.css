@@ -21,42 +21,12 @@ header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p
     padding: 0;
 }
 
-header
+a
 {
-    display: block;
-    padding: 32px;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-
-    width: auto;
-
-    background: var(--themeColor);
-}
-
-main
-{
-    display: block;
-    padding-top: 96px;
-}
-
-footer
-{
-    padding: 32px;
-    display: block;
-
-    text-align: center;
-}
-
-a {
     text-decoration: none;
 }
 
-.headerText {
-    font-size: 32px;
-}
+/* Common Classes */
 
 .largeText
 {
@@ -71,36 +41,6 @@ a {
 .smallText
 {
     font-size: 18px;
-}
-
-.footerText {
-    font-size: 12px;
-}
-
-.sectionTop
-{
-    padding: 32px;
-}
-.mainSection
-{
-    padding: 32px;
-}
-
-.mainLogoMid
-{
-    height: 20vw;
-    float: right;
-    padding: 64px;
-}
-
-@media (orientation: portrait)
-{
-	.mainLogoMid
-	{
-		float: none;
-        padding: 8px;
-        height: 40vw;
-	}
 }
 
 .defaultCTA {
@@ -139,26 +79,14 @@ a {
     background: #333333;
 }
 
-.headerLogo a
+.accentText
 {
-    display: block;
+    color: var(--accentColor);
 }
 
-.logoAbstract {
-    height: 32px;
-}
-
-.logoWritten {
-    height: 20px;
-    padding: 6px;
-}
-
-@media (orientation: portrait)
+.accentBackground
 {
-    .logoWritten
-    {
-        display: none;
-    }
+    background: var(--accentColor);
 }
 
 .iconSocial
@@ -183,107 +111,34 @@ a {
     background: #ffffff;
 }
 
-.iconSocialHeader
+.defSection
 {
-    float: right;
-    font-size: 24px;
-}
-
-.iconSocialHeader a
-{
-    padding: 4px;
-}
-.iconSocialFooter
-{
-    font-size: 24px;
-}
-
-.accentText
-{
-    color: var(--accentColor);
-}
-
-.accentBackground
-{
-    background: var(--accentColor);
+    display: block;
+    overflow: hidden;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .sectionHead
 {
     padding: 32px;
-}
-
-.defSection
-{
-    display: block;
-    overflow: hidden;
-}
-
-.aboutUs
-{
-    background: #eeeeee;
-    color: #000000;
-    padding-top: 0;
-}
-
-.defSectionBox
-{
-    display: flex;
-    overflow: hidden;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 32px;
-}
-
-.defSectionBox div
-{
-    flex: 1;
-    border-radius: 2px;
-
-    text-align: justify;
-    padding: 8px;
-}
-
-.defSectionBox div:hover, .defSectionBox div:active
-{
-    background: #111;
-    color: #eee;
-}
-
-@media (orientation: portrait)
-{
-    .defSectionBox
-    {
-        display: block;
-    }
-    .defSectionBox div
-    {
-        display: block;
-    }
-}
-
-.whatWeDo
-{
-    background: #000000;
-    padding-bottom: 32px;
+    padding-top: 8px;
 }
 
 .stripeWrapper
 {
-    padding: 2px;
+    padding: 4px;
 }
 
 .sectionStripe
 {
     display: flex;
-    margin-top: 4px;
-    margin-bottom: 16px;
 
     border-radius: 4px;
 
     padding: 32px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .sectionStripe:hover, .sectionStripe:active
@@ -353,4 +208,159 @@ a {
         display: block;
         padding-top: 32px;
     }
+}
+
+.defSectionBox
+{
+    display: flex;
+    overflow: hidden;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.defSectionBox div
+{
+    flex: 1;
+    border-radius: 2px;
+
+    text-align: justify;
+    padding: 8px;
+}
+
+.defSectionBox div:hover, .defSectionBox div:active
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+@media (orientation: portrait)
+{
+    .defSectionBox
+    {
+        display: block;
+    }
+    .defSectionBox div
+    {
+        display: block;
+    }
+}
+
+/* Header */
+
+header
+{
+    display: block;
+    padding: 32px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    width: auto;
+
+    background: var(--themeColor);
+    background: #000000;
+}
+
+.headerText
+{
+    font-size: 32px;
+}
+
+.headerLogo a
+{
+    display: block;
+}
+
+.logoAbstract {
+    height: 32px;
+}
+
+.logoWritten {
+    height: 20px;
+    padding: 6px;
+}
+
+@media (orientation: portrait)
+{
+    .logoWritten
+    {
+        display: none;
+    }
+}
+
+.iconSocialHeader
+{
+    float: right;
+    font-size: 24px;
+}
+
+.iconSocialHeader a
+{
+    padding: 4px;
+}
+
+/* Main */
+
+main
+{
+    display: block;
+}
+
+.mainSection
+{
+    padding: 32px;
+    padding-top: 128px;
+    padding-bottom: 72px;
+}
+
+.mainLogoMid
+{
+    height: 20vw;
+    float: right;
+    padding: 64px;
+}
+
+@media (orientation: portrait)
+{
+	.mainLogoMid
+	{
+		float: none;
+        padding: 8px;
+        height: 40vw;
+	}
+}
+
+.whatWeDo
+{
+    background: #000000;
+}
+
+.aboutUs
+{
+    background: #eeeeee;
+    color: #000000;
+}
+
+/* Footer */
+
+footer
+{
+    padding: 32px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+
+    display: block;
+
+    text-align: center;
+}
+
+.footerText
+{
+    font-size: 12px;
+}
+
+.iconSocialFooter
+{
+    font-size: 24px;
 }
