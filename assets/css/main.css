@@ -149,18 +149,30 @@ a
 .stripeSectionIcon, .stripeSectionHeading, .stripeSectionPara
 {
     overflow: hidden;
+}
+
+.stripeSectionIcon
+{
     padding: 4px;
+}
+
+.stripeSectionHeading
+{
+    padding: 8px;
+}
+
+.stripeSectionPara
+{
+    padding: 8px;
 }
 
 .stripeSectionIcon img
 {
-    height: 32px;
-}
+    height: 64px;
+    width: 100%;
+    background: var(--accentColor);
 
-.stripeSectionHeading img
-{
-    height: 16px;
-    padding: 8px;
+    border-radius: 4px;
 }
 
 .stripeSectionHeading, .stripeSectionHeading p
@@ -201,16 +213,17 @@ a
     }
     .stripeSectionHeading 
     {
-        display: inline-block;
+        display: inline-flex;
+        padding-top: 16px;
     }
     .stripeSectionPara
     {
         display: block;
-        padding-top: 32px;
+        padding-top: 16px;
     }
 }
 
-.defSectionBox
+.defSectionBoxWrapper
 {
     display: flex;
     overflow: hidden;
@@ -218,27 +231,51 @@ a
     padding-right: 32px;
 }
 
-.defSectionBox div
+.defSectionBox
 {
     flex: 1;
     border-radius: 2px;
 
+    border: 4px solid;
+    border-color: none;
+
     text-align: justify;
     padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+
+    background: rgba(0, 0, 0, 0.1);
 }
 
-.defSectionBox div:hover, .defSectionBox div:active
+.defSectionBox img
+{
+    background: var(--accentColor);
+    border-radius: 4px;
+    width: 100%;
+    height: 128px;
+}
+
+.defSectionBoxHeading
+{
+    padding: 0;
+    padding: 32px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.defSectionBox:hover, .defSectionBox:active
 {
     background: rgba(0, 0, 0, 0.1);
 }
 
 @media (orientation: portrait)
 {
-    .defSectionBox
+    .defSectionBoxWrapper
     {
         display: block;
     }
-    .defSectionBox div
+    .defSectionBox
     {
         display: block;
     }
