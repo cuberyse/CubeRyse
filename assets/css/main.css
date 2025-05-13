@@ -25,9 +25,15 @@ header
 {
     display: block;
     padding: 32px;
+
     position: fixed;
     left: 0;
     top: 0;
+    right: 0;
+
+    width: 100%;
+
+    background: var(--themeColor);
 }
 
 main
