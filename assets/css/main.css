@@ -282,8 +282,8 @@ header
 {
     display: block;
     padding: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     position: fixed;
     left: 0;
@@ -319,8 +319,8 @@ header
 }
 
 .logoWritten {
-    height: 20px;
-    padding: 6px;
+    height: 16px;
+    padding: 8px;
 }
 
 @media (orientation: portrait)
@@ -379,16 +379,22 @@ main
     background: rgba(0, 0, 0, 0.3);
 }
 
+.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
+{
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .aboutUs
 {
     color: #eee;
-    background: rgba(0, 0, 0, 0.3);
-    background: #000;
+    background: rgba(0, 0, 0, 0.9);
 }
 
-.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active, .aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
+.aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
 {
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
+    background: #333;
+    color: #eee;
 }
 
 /* Footer */
