@@ -293,6 +293,15 @@ header
     background: #000000;
 }
 
+@media (orientation: portrait)
+{
+    header
+    {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
 .headerText
 {
     font-size: 32px;
@@ -398,6 +407,15 @@ footer
     display: block;
 
     text-align: center;
+}
+
+@media (orientation: portrait)
+{
+    footer
+    {
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
 }
 
 .footerText
