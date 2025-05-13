@@ -4,8 +4,16 @@
     --themeColor: #000022;
 }
 
+html
+{
+    background: #111;
+    background: no-repeat url("../../assets/media/cgpt.svg");
+	background-size: cover;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
 body {
-    background: var(--themeColor);
     color: #eeeeee;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -274,6 +282,8 @@ header
 {
     display: block;
     padding: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     position: fixed;
     left: 0;
