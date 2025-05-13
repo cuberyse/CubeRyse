@@ -31,7 +31,7 @@ header
     top: 0;
     right: 0;
 
-    width: 100%;
+    width: auto;
 
     background: var(--themeColor);
 }
@@ -223,7 +223,6 @@ a {
 {
     background: #eeeeee;
     color: #000000;
-    padding: 32px;
     padding-top: 0;
 }
 
@@ -231,6 +230,7 @@ a {
 {
     display: flex;
     overflow: hidden;
+    padding: 32px;
 }
 
 .defSectionBox div
