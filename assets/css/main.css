@@ -25,11 +25,15 @@ header
 {
     display: block;
     padding: 32px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 main
 {
     display: block;
+    padding-top: 96px;
 }
 
 footer
@@ -213,6 +217,8 @@ a {
 {
     background: #eeeeee;
     color: #000000;
+    padding: 32px;
+    padding-top: 0;
 }
 
 .defSectionBox
@@ -250,7 +256,8 @@ a {
 
 .whatWeDo
 {
-    background: #000000;    
+    background: #000000;
+    padding-bottom: 32px;
 }
 
 .stripeWrapper
@@ -266,6 +273,7 @@ a {
 
     border-radius: 4px;
 
+    padding: 32px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
