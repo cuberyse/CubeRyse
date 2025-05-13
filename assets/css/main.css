@@ -24,7 +24,7 @@ header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p
 header
 {
     display: block;
-    padding: 40px;
+    padding: 32px;
 }
 
 main
@@ -34,7 +34,7 @@ main
 
 footer
 {
-    padding: 40px;
+    padding: 32px;
     display: block;
 
     text-align: center;
@@ -42,10 +42,6 @@ footer
 
 a {
     text-decoration: none;
-}
-
-p {
-    margin: 0;
 }
 
 .headerText {
@@ -73,7 +69,11 @@ p {
 
 .sectionTop
 {
-    padding: 40px;
+    padding: 32px;
+}
+.mainSection
+{
+    padding: 32px;
 }
 
 .mainLogoMid
@@ -198,11 +198,15 @@ p {
     background: var(--accentColor);
 }
 
+.sectionHead
+{
+    padding: 32px;
+}
+
 .defSection
 {
     display: block;
     overflow: hidden;
-    padding: 40px;
 }
 
 .aboutUs
