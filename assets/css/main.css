@@ -1,7 +1,7 @@
 :root
 {
     --accentColor: #0055BB;
-    --themeColor: #00000A;
+    --themeColor: #000011;
 }
 
 body {
@@ -290,7 +290,6 @@ header
     width: auto;
 
     background: var(--themeColor);
-    background: #000000;
 }
 
 @media (orientation: portrait)
