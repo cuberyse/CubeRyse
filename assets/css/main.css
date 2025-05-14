@@ -140,7 +140,9 @@ a
 
 .stripeWrapper
 {
-    padding: 4px;
+    padding: 32px;
+	padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .sectionStripe
@@ -149,7 +151,7 @@ a
 
     border-radius: 4px;
 
-    padding: 32px;
+    padding: 0px;
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -166,7 +168,7 @@ a
 
 .stripeSectionIcon
 {
-    padding: 4px;
+    padding: 0px;
 }
 
 .stripeSectionHeading
@@ -195,17 +197,19 @@ a
 }
 .stripeSectionIcon 
 {
-    flex: 2;
+    flex: 1;
 }
 
 .stripeSectionHeading 
 {
-    flex: 3;
+    flex: 1;
+	font-size: larger;
+	padding: 10px;
 }
 
 .stripeSectionPara 
 {
-    flex: 7;
+    flex: 4;
 }
 
 @media (orientation: portrait)
@@ -213,6 +217,8 @@ a
     .sectionStripe
     {
         display: block;
+		padding-top: 0;
+		padding-bottom: 8px;
     }
     .stripeSectionIcon
     {
@@ -279,6 +285,7 @@ a
 	.longCardContent
 	{
 		order: 2;
+		padding: 4px;
 	}
 }
 
@@ -314,7 +321,10 @@ a
     padding: 32px;
 
     font-size: 20px;
-    text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	text-align: center;
 }
 
 .defSectionBox:hover, .defSectionBox:active
@@ -332,6 +342,10 @@ a
     {
         display: block;
     }
+	.defSectionBoxHeading
+	{
+		text-align: left;
+	}
 }
 
 /* Header */
@@ -419,6 +433,11 @@ main
     padding: 32px;
     padding-top: 128px;
     padding-bottom: 72px;
+}
+
+.mainSection p
+{
+	text-align: justify;
 }
 
 .mainLogoMid
