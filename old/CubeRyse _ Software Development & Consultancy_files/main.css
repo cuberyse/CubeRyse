@@ -7,24 +7,31 @@
 
 html
 {
-    background: #000;
-    background: no-repeat url("../../assets/media/bg1.png");
+    background: #111;
+    background: no-repeat url("../../assets/media/chatGPTbackground.png");
 	background-size: cover;
-	
-    /*-webkit-backdrop-filter: blur(10px);
+	/*
+    -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);*/
+}
+
+.backgroundImg
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 body
 {
     color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
-
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    /*font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;*/
+    font-size: 16px;
 
     margin: 0;
 
@@ -40,36 +47,6 @@ header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p
 a
 {
     text-decoration: none;
-}
-
-h1
-{
-    font-size: 2.5rem; /* ~40px */
-    font-size: 2rem;    /* ~32px */
-}
-
-h2 {
-    font-size: 1.75rem; /* ~28px */
-}
-
-h3 {
-    font-size: 1.5rem;  /* ~24px */
-}
-
-h4 {
-    font-size: 1.25rem; /* ~20px */
-}
-
-h5 {
-    font-size: 1rem;    /* ~16px */
-}
-
-h6 {
-    font-size: 1rem;    /* ~16px */
-}
-
-p {
-    font-size: 0.875rem; /* 14px */
 }
 
 /* Common Classes */
@@ -93,25 +70,12 @@ p {
 {
     font-size: 16px;
 
-    padding: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 4px;
 
-    margin: 4px;
-
-    font-weight:bolder;
-}
-@media (orientation: portrait)
-{
-    .defaultCTA
-    {
-        font-size: 14px;
-        padding: 12px;
-        padding-left: 22px;
-        padding-right: 22px;
-
-        margin: 2px;
-    }
+    font-weight: normal;
 }
 
 .accentCTA
@@ -128,8 +92,8 @@ p {
 
 .stdCTA
 {
-    background: #ffffff;
-    color: #000000;
+    background: #333;
+    color: #eeeeee;
 }
 
 .stdCTA:active, .stdCTA:hover
@@ -240,6 +204,7 @@ p {
 
 .stripeSectionPara, .stripeSectionPara p
 {
+    font-size: 16px;
     text-align: justify;
 }
 .stripeSectionIcon 
@@ -292,9 +257,12 @@ p {
 {
 	display: flex;
     overflow: hidden;
+	border-radius: 4px;
+	background: #eee;
+	border: 1px solid #333333;
+	color: #111111;
 
-    margin: 4px;
-    margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .longCardImage
@@ -329,6 +297,7 @@ p {
 	.longCardContent
 	{
 		order: 2;
+		padding: 4px;
 	}
 }
 
@@ -343,30 +312,31 @@ p {
 .defSectionBox
 {
     flex: 1;
+    border-radius: 4px;
 
     text-align: justify;
-    padding: 32px;
+    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 32px;
 }
 
 .defSectionBox img
 {
+    border-radius: 4px;
+    width: 100%;
     height: 128px;
 }
 
 .defSectionBoxHeading
 {
-    margin-bottom: 16px;
-}
+    padding: 0;
+    padding: 32px;
 
-.defSectionBox a
-{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 12px;
+    font-size: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 
-    margin-top: 16px;
-
-    display: inline-block;
+	text-align: center;
 }
 
 .defSectionBox:hover, .defSectionBox:active
@@ -398,17 +368,16 @@ header
     padding-top: 24px;
     padding-bottom: 24px;
 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
     width: auto;
 
-    /*background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
-  	-webkit-backdrop-filter: blur(10px);*/
-    background: #000000;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  	-webkit-backdrop-filter: blur(10px);
 }
 
 header:hover, header:active
@@ -463,7 +432,6 @@ header:hover, header:active
 main
 {
     display: block;
-    padding-top: 96px;
 }
 
 .mainSection
@@ -472,12 +440,10 @@ main
     padding-top: 128px;
     padding-bottom: 72px;
 }
-@media (orientation: portrait)
+
+.mainSection p
 {
-    .mainSection
-    {
-        padding-top: 80px;
-    }
+	text-align: justify;
 }
 
 .mainLogoMid
@@ -485,7 +451,6 @@ main
     height: 20vw;
     float: right;
     padding: 64px;
-    display: none;
 }
 
 @media (orientation: portrait)
@@ -500,46 +465,10 @@ main
 
 .whatWeDo
 {
-    background: #eee;
-    color: #000000;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.whatWeDo .defSectionBox
-{
-	background: var(--accentColor);
-    color: #ffffff;
-
-    margin: 8px;
-}
-
-.whatWeDo .defSectionBox a
-{
-    color: #ffffff;
-}
-
-.whatWeDo .defSectionBox:hover, .whatWeDo .defSectionBox:active
-{
-    background: #ffffff;
-    color: var(--accentColor);
-}
-
-.whatWeDo .defSectionBox:hover h3, .whatWeDo .defSectionBox:active h3
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox:hover p, .whatWeDo .defSectionBox:active p {
-    color: #333333;
-}
-.whatWeDo .defSectionBox:hover a, .whatWeDo .defSectionBox:active a
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox a:hover, .whatWeDo .defSectionBox a:active
-{
-    color: #000000;
-}
-
-/*
 .whatWeDo .sectionStripe
 {
 	margin-bottom: 2px;
@@ -549,23 +478,16 @@ main
 {
     background: rgba(255, 255, 255, 0.1);
 }
-*/
 
 .ourWork
 {
-	background: #ddd;
-    color: #000000;
+	background: rgba(0, 0, 0, 0.9);
 }
 
 .ourWork .longCard
 {
-	background: #ffffff;
-	color: #000000;
-}
-
-.ourWork .longCard h3
-{
-	color: var(--accentColor);
+	background: rgba(0, 0, 0, 0.9);
+	color: #eee;
 }
 
 .ourWork .longCard:hover, .ourWork .longCard:active
@@ -574,44 +496,20 @@ main
 	color: #111111;
 }
 
-.ourWork .longCard:hover p, .longCard .defSectionBox:active p {
-    color: #333333;
-}
-
 .whyUs
 {
-    color: #111111;
-    background: #eeeeee;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .whyUs .defSectionBox
 {
-    background: #eeeeee;
-
-    margin: 8px;
-}
-
-.whyUs .defSectionBox img
-{
-    margin-bottom: 16px;
-}
-
-.whyUs .defSectionBox h3
-{
-    color: var(--accentColor);
+	color: #eeeeee;
 }
 
 .whyUs .defSectionBox:hover, .whyUs .defSectionBox:active
 {
-    background: #ffffff;
-}
-
-.whatWeDo .defSectionBox:hover h3, .whatWeDo .defSectionBox:active h3
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox:hover p, .whatWeDo .defSectionBox:active p {
-    color: #333333;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer */
@@ -620,13 +518,12 @@ footer
 {
     padding: 32px;
     padding-bottom: 64px;
-    padding-top: 48px;
+    padding-top: 64px;
 
     display: block;
 
-    font-size: 10px;
-
-    background: #000000;
+    text-align: center;
+    font-size: 12px;
 }
 
 @media (orientation: portrait)
