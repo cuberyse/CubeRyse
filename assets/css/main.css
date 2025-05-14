@@ -57,7 +57,8 @@ a
     font-size: 18px;
 }
 
-.defaultCTA {
+.defaultCTA
+{
     font-size: 16px;
 
     padding: 12px;
@@ -65,7 +66,7 @@ a
     padding-right: 14px;
     border-radius: 4px;
 
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .accentCTA
@@ -168,12 +169,14 @@ a
 
 .stripeSectionIcon
 {
-    padding: 0px;
+    padding: 4px;
 }
 
 .stripeSectionHeading
 {
     padding: 8px;
+    font-size: larger;
+	padding: 10px;
 }
 
 .stripeSectionPara
@@ -203,8 +206,6 @@ a
 .stripeSectionHeading 
 {
     flex: 1;
-	font-size: larger;
-	padding: 10px;
 }
 
 .stripeSectionPara 
@@ -223,6 +224,7 @@ a
     .stripeSectionIcon
     {
         display: inline;
+        padding: 0;
     }
     .stripeSectionHeading 
     {
@@ -241,6 +243,7 @@ a
     padding-left: 32px;
     padding-right: 32px;
 }
+
 .longCard
 {
 	display: flex;
@@ -352,7 +355,6 @@ a
 
 header
 {
-    display: block;
     padding: 32px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -381,11 +383,6 @@ header:hover, header:active
         padding-top: 16px;
         padding-bottom: 16px;
     }
-}
-
-.headerText
-{
-    font-size: 32px;
 }
 
 .headerLogo a
@@ -517,6 +514,7 @@ footer
     display: block;
 
     text-align: center;
+    font-size: 12px;
 }
 
 @media (orientation: portrait)
@@ -526,11 +524,6 @@ footer
         padding-top: 32px;
         padding-bottom: 48px;
     }
-}
-
-.footerText
-{
-    font-size: 12px;
 }
 
 .iconSocialFooter
