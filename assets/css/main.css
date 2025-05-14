@@ -8,11 +8,23 @@
 html
 {
     background: #111;
-    background: no-repeat url("../../assets/media/cgpt.svg");
+    background: no-repeat url("../../assets/media/chatGPTbackground.png");
 	background-size: cover;
-    /*
-	-webkit-backdrop-filter: blur(10px);
+	/*
+    -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);*/
+}
+
+.backgroundImg
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 body
