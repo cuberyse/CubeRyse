@@ -366,7 +366,7 @@ header
 
     background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
-  	-webkit-backdrop-filter: blur(10px); /* for Safari support */
+  	-webkit-backdrop-filter: blur(10px);
 }
 
 header:hover, header:active
