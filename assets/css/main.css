@@ -14,7 +14,8 @@ html
 	backdrop-filter: blur(10px);
 }
 
-body {
+body
+{
     color: #eeeeee;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +23,10 @@ body {
     margin: 0;
 
     font-size: 16px;
+
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+  	-webkit-backdrop-filter: blur(10px);
 }
 
 header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p
@@ -225,6 +230,58 @@ a
     }
 }
 
+.longCardWrapper
+{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.longCard
+{
+	display: flex;
+    overflow: hidden;
+	border-radius: 4px;
+	background: #eee;
+	border: 1px solid #333333;
+	color: #111111;
+
+	margin-bottom: 32px;
+}
+
+.longCardImage
+{
+	flex: 3;
+	overflow: hidden;
+}
+
+.longCardImage img
+{
+	width: 100%;
+	max-height: 256px;
+}
+
+.longCardContent
+{
+	flex: 7;
+	padding: 32px;
+	text-align: justify;
+}
+
+@media (orientation: portrait)
+{
+	.longCard
+	{
+  		flex-direction: column;
+	}
+	.longCardImage
+	{
+		order: 1;
+	}
+	.longCardContent
+	{
+		order: 2;
+	}
+}
+
 .defSectionBoxWrapper
 {
     display: flex;
@@ -293,7 +350,14 @@ header
 
     width: auto;
 
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+  	-webkit-backdrop-filter: blur(10px); /* for Safari support */
+}
+
+header:hover, header:active
+{
+	background: #000000;
 }
 
 @media (orientation: portrait)
@@ -380,22 +444,47 @@ main
     background: rgba(0, 0, 0, 0.3);
 }
 
-.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
+.whatWeDo .sectionStripe
 {
-    background: rgba(0, 0, 0, 0.5);
+	margin-bottom: 2px;
 }
 
-.aboutUs
+.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
+{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.ourWork
+{
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.ourWork .longCard
+{
+	background: rgba(0, 0, 0, 0.9);
+	color: #eee;
+}
+
+.ourWork .longCard:hover, .ourWork .longCard:active
+{
+	background: #eeeeee;
+	color: #111111;
+}
+
+.whyUs
 {
     color: #eee;
     background: rgba(0, 0, 0, 0.9);
 }
 
-.aboutUs .defSectionBox:hover, .aboutUs .defSectionBox:active
+.whyUs .defSectionBox
 {
-    background: rgba(0, 0, 0, 0.5);
-    background: #333;
-    color: #eee;
+	color: #eeeeee;
+}
+
+.whyUs .defSectionBox:hover, .whyUs .defSectionBox:active
+{
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer */
