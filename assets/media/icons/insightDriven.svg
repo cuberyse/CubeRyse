@@ -1,9 +1,9 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="62.857" y1="446.612" x2="272.857" y2="300.359" stroke="black" stroke-width="4"/>
-<line x1="341.853" y1="326.779" x2="446.704" y2="253.362" stroke="black" stroke-width="4"/>
-<line x1="343.321" y1="325.881" x2="271.321" y2="299.881" stroke="black" stroke-width="4"/>
-<line x1="376" y1="253" x2="448" y2="253" stroke="black" stroke-width="4"/>
-<line x1="446" y1="315" x2="446" y2="255" stroke="black" stroke-width="4"/>
-<circle cx="320" cy="128" r="62" stroke="#0055BB" stroke-width="4"/>
+<line x1="61.714" y1="444.971" x2="271.714" y2="298.718" stroke="black" stroke-width="8"/>
+<line x1="340.706" y1="325.141" x2="445.557" y2="251.723" stroke="black" stroke-width="8"/>
+<line x1="342.641" y1="327.762" x2="270.641" y2="301.762" stroke="black" stroke-width="8"/>
+<line x1="376" y1="251" x2="448" y2="251" stroke="black" stroke-width="8"/>
+<line x1="444" y1="315" x2="444" y2="255" stroke="black" stroke-width="8"/>
+<circle cx="320" cy="128" r="60" stroke="#0055BB" stroke-width="8"/>
 <path d="M247.47 156.974C264.507 146.789 281.175 170.593 265.777 183.119L152.441 275.315C145.234 281.178 134.567 279.691 129.238 272.081L117.174 254.852C111.845 247.242 114.096 236.708 122.07 231.941L247.47 156.974Z" fill="#0055BB"/>
 </svg>
