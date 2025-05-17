@@ -319,7 +319,7 @@ p {
 
 .longCardImage
 {
-	flex: 3;
+	flex: 1;
 	overflow: hidden;
 }
 
@@ -331,7 +331,7 @@ p {
 
 .longCardContent
 {
-	flex: 7;
+	flex: 1;
 	padding: 32px;
 	text-align: justify;
 }
