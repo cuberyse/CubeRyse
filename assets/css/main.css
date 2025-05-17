@@ -117,7 +117,7 @@ p {
 .accentCTA
 {
     background: var(--accentColor);
-    background: url(../../assets/media/background-accent-logo.svg);
+    background: url("../../assets/media/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -132,6 +132,9 @@ p {
 .stdCTA
 {
     background: #ffffff;
+    background: url("../../assets/media/background-ffffff-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #000000;
 }
 
