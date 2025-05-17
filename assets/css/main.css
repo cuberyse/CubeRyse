@@ -117,6 +117,9 @@ p {
 .accentCTA
 {
     background: var(--accentColor);
+    background: url(../../assets/media/background-accent-logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -156,7 +159,6 @@ p {
 
 .iconSocial a {
     padding: 8px;
-    border-radius: 8px;
     
     color: #eeeeee;
 
@@ -174,28 +176,36 @@ p {
 {
     display: block;
     overflow: hidden;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .sectionHead
 {
-    padding: 32px;
-    padding-top: 8px;
+    padding: 128px;
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+@media (orientation: portrait)
+{
+    .sectionHead
+    {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .stripeWrapper
 {
-    padding: 32px;
-	padding-top: 4px;
-    padding-bottom: 4px;
+    display: block;
 }
 
 .sectionStripe
 {
     display: flex;
 
-    border-radius: 4px;
+
 
     padding: 0px;
     padding-top: 16px;
@@ -235,7 +245,6 @@ p {
     width: 100%;
     background: var(--accentColor);
 
-    border-radius: 4px;
 }
 
 .stripeSectionPara, .stripeSectionPara p
@@ -284,8 +293,17 @@ p {
 
 .longCardWrapper
 {
-    padding-left: 32px;
-    padding-right: 32px;
+    display: block;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+@media (orientation: portrait)
+{
+    .longCardWrapper
+    {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .longCard
@@ -293,7 +311,6 @@ p {
 	display: flex;
     overflow: hidden;
 
-    margin: 4px;
     margin-bottom: 32px;
 }
 
@@ -334,10 +351,18 @@ p {
 
 .defSectionBoxWrapper
 {
+    width: auto;
     display: flex;
-    overflow: hidden;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+@media (orientation: portrait)
+{
+    .defSectionBoxWrapper
+    {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .defSectionBox
@@ -346,6 +371,7 @@ p {
 
     text-align: justify;
     padding: 32px;
+    overflow: hidden;
 }
 
 .defSectionBox img
@@ -394,7 +420,7 @@ p {
 
 header
 {
-    padding: 32px;
+    padding: 128px;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -404,22 +430,21 @@ header
 	backdrop-filter: blur(10px);
   	-webkit-backdrop-filter: blur(10px);*/
     background: #000000;
+    background: url(../../assets/media/background-long-mixed.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-}
-
-header:hover, header:active
-{
-	background: #000000;
 }
 
 @media (orientation: portrait)
 {
     header
     {
+        padding: 32px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
@@ -468,15 +493,16 @@ main
 
 .mainSection
 {
-    padding: 32px;
-    padding-top: 128px;
-    padding-bottom: 72px;
+    padding: 128px;
+    padding-bottom: 96px;
 }
 @media (orientation: portrait)
 {
     .mainSection
     {
-        padding-top: 80px;
+        padding: 32px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 }
 
@@ -507,9 +533,11 @@ main
 .whatWeDo .defSectionBox
 {
 	background: var(--accentColor);
+    background: url(../../assets/media/background-accent-logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
-
-    margin: 8px;
+    margin: 4px;
 }
 
 .whatWeDo .defSectionBox a
@@ -571,6 +599,9 @@ main
 .ourWork .longCard:hover, .ourWork .longCard:active
 {
 	background: #eeeeee;
+    background: url(../../assets/media/background-eeeeee-logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 	color: #111111;
 }
 
@@ -587,8 +618,6 @@ main
 .whyUs .defSectionBox
 {
     background: #eeeeee;
-
-    margin: 8px;
 }
 
 .whyUs .defSectionBox img
@@ -604,6 +633,10 @@ main
 .whyUs .defSectionBox:hover, .whyUs .defSectionBox:active
 {
     background: #ffffff;
+    background: #eeeeee;
+    background: url(../../assets/media/background-ffffff-logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .whatWeDo .defSectionBox:hover h3, .whatWeDo .defSectionBox:active h3
@@ -618,7 +651,7 @@ main
 
 footer
 {
-    padding: 32px;
+    padding: 128px;
     padding-bottom: 64px;
     padding-top: 48px;
 
@@ -633,9 +666,16 @@ footer
 {
     footer
     {
-        padding-top: 32px;
+        padding: 32px;
         padding-bottom: 48px;
     }
+}
+
+.logoFooterLong
+{
+    width: 100%;
+    padding-bottom: 32px;
+    padding-top: 16px;
 }
 
 .iconSocialFooter
