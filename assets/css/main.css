@@ -31,7 +31,7 @@ body
 	background: rgba(0, 0, 0, 0.1);
 }
 
-header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p
+header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside
 {
     margin: 0;
     padding: 0;
@@ -438,6 +438,11 @@ header
     top: 0;
     left: 0;
     right: 0;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    text-align: right;
 }
 
 @media (orientation: portrait)
@@ -448,6 +453,11 @@ header
         padding-top: 16px;
         padding-bottom: 16px;
     }
+}
+
+.headerLogo
+{
+    float: left;
 }
 
 .headerLogo a
@@ -472,15 +482,67 @@ header
     }
 }
 
+.headerNav
+{
+    margin-left: 32px;
+    margin-right: 32px;
+    display: inline;
+}
+
+.headerNav a
+{
+    height: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.headerNav p
+{
+    color: #eeeeee;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.15rem;
+
+    margin-left: 4px;
+    margin-right: 4px;
+
+    /*background: var(--accentColor);*/
+}
+
+.headerNav p:active, .headerNav p:hover
+{
+    color: var(--accentColor);
+    background: url("../../assets/media/background-ffffff-logo.svg");
+}
+
+@media (orientation: portrait)
+{
+    .headerNav
+    {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+}
+
 .iconSocialHeader
 {
+    font-size: 22px;
+    display: flex;
     float: right;
-    font-size: 24px;
+    height: 32px;
+    overflow: hidden;
 }
 
 .iconSocialHeader a
 {
-    padding: 4px;
+    flex: 1;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 /* Main */
@@ -511,7 +573,14 @@ main
     height: 20vw;
     float: right;
     padding: 64px;
-    display: none;
+
+    background: url("../../assets/media/background-accent-logo.svg");
+    border-radius: 16px;
+}
+
+.mainLogoMid:hover, .mainLogoMid:active
+{
+    background: url("../../assets/media/background-long-mixed.svg");
 }
 
 @media (orientation: portrait)
