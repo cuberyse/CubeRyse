@@ -691,7 +691,7 @@ main
 
 .ourWork .longCardImage
 {
-    min-height: 480px;
+    height: 480px;
 }
 
 .ourWork .longCardImage img
@@ -708,7 +708,7 @@ main
 {
     .ourWork .longCardImage
     {
-        min-height: 256px;
+        height: 256px;
     }
     .ourWork .longCardImage img
     {
