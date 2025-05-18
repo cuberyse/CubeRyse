@@ -801,6 +801,14 @@ main
     padding-right: 128px;
 }
 
+.aboutUsBox
+{
+    padding: 32px;
+    background: url("../../assets/media/backgrounds/background-long-mixed-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
 @media (orientation: portrait)
 {
     .aboutUsInnerWrapper
