@@ -804,9 +804,24 @@ main
 .aboutUsBox
 {
     padding: 32px;
-    background: url("../../assets/media/backgrounds/background-long-mixed-2.svg");
+    margin-top: 4px;
+    margin-bottom: 8px;
+    background: url("../../assets/media/backgrounds/background-1111111-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;   
+}
+
+.aboutUsBox:hover, .aboutUsBox:active
+{
+    color: #111111;
+    background: url("../../assets/media/backgrounds/background-eeeeee-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.aboutUsBox:hover h3, .aboutUsBox:active h3
+{
+    color: var(--accentColor);
 }
 
 @media (orientation: portrait)
