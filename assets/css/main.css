@@ -320,8 +320,21 @@ p {
 
 .longCardImage
 {
-	flex: 1;
+	flex: 2;
 	overflow: hidden;
+}
+
+.longCardImage img
+{
+	width: 100%;
+	max-height: 512px;
+}
+
+.longCardContent
+{
+	flex: 1;
+	padding: 32px;
+	text-align: justify;
 }
 
 .workStackLabel
@@ -341,19 +354,6 @@ p {
     background: url("../../assets/media/backgrounds/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.longCardImage img
-{
-	width: 100%;
-	max-height: 256px;
-}
-
-.longCardContent
-{
-	flex: 1;
-	padding: 32px;
-	text-align: justify;
 }
 
 @media (orientation: portrait)
@@ -691,7 +691,7 @@ main
 
 .ourWork .longCardImage
 {
-    min-height: 256px;
+    min-height: 480px;
 }
 
 .ourWork .longCardImage img
@@ -706,6 +706,10 @@ main
 
 @media (orientation: portrait)
 {
+    .ourWork .longCardImage
+    {
+        min-height: 256px;
+    }
     .ourWork .longCardImage img
     {
         width: 20vw;
