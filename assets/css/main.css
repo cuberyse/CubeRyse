@@ -689,9 +689,27 @@ main
 	color: var(--accentColor);
 }
 
+.ourWork .longCardImage
+{
+    min-height: 256px;
+}
+
 .ourWork .longCardImage img
 {
-    padding: 16px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    width: 8vw;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+@media (orientation: portrait)
+{
+    .ourWork .longCardImage img
+    {
+        width: 20vw;
+    }
 }
 
 .tgwWeb .longCardImage
