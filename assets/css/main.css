@@ -324,9 +324,21 @@ p {
 	overflow: hidden;
 }
 
-.tgwWeb
+.workStackLabel
 {
-    background: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    font-size: 0.8rem;
+    display: inline-block;
+    
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 32px;
+    color: #ffffff;
+
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -677,6 +689,24 @@ main
 	color: var(--accentColor);
 }
 
+.ourWork .longCardImage img
+{
+    padding: 16px;
+}
+
+.tgwWeb .longCardImage
+{
+    background: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buorgu .longCardImage
+{
+    background: url("../../assets/media/designs/web/burogu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .ourWork .longCard:hover, .ourWork .longCard:active
 {
 	background: #eeeeee;
@@ -688,6 +718,15 @@ main
 
 .ourWork .longCard:hover p, .longCard .defSectionBox:active p {
     color: #333333;
+}
+
+.ourWork .longCard:active .workStackLabel, .ourWork .longCard:hover .workStackLabel
+{
+    color: #ffffff;
+
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .whyUs
