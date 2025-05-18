@@ -8,7 +8,7 @@
 html
 {
     background: #000;
-    background: no-repeat url("../../assets/media/bg1.png");
+    background: no-repeat url("../../assets/media/backgrounds/bg1.png");
 	background-size: cover;
 	
     /*-webkit-backdrop-filter: blur(10px);
@@ -117,7 +117,7 @@ p {
 .accentCTA
 {
     background: var(--accentColor);
-    background: url("../../assets/media/background-accent-logo.svg");
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -132,7 +132,7 @@ p {
 .stdCTA
 {
     background: #ffffff;
-    background: url("../../assets/media/background-ffffff-logo.svg");
+    background: url("../../assets/media/backgrounds/background-ffffff-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #000000;
@@ -171,8 +171,9 @@ p {
 
 .iconSocial a:active, .iconSocial a:hover
 {
-    color: var(--accentColor);
-    background: #ffffff;
+    /*color: var(--accentColor);
+    background: #ffffff;*/
+    color: #999999;
 }
 
 .defSection
@@ -323,6 +324,13 @@ p {
 	overflow: hidden;
 }
 
+.tgwWeb
+{
+    background: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .longCardImage img
 {
 	width: 100%;
@@ -433,7 +441,7 @@ header
 	backdrop-filter: blur(10px);
   	-webkit-backdrop-filter: blur(10px);*/
     background: #000000;
-    background: url(../../assets/media/background-long-mixed-2.svg);
+    background: url("../../assets/media/backgrounds/background-long-mixed-2.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -515,8 +523,9 @@ header
 
 .headerNav p:active, .headerNav p:hover
 {
-    color: var(--accentColor);
-    background: url("../../assets/media/background-ffffff-logo.svg");
+    /*color: var(--accentColor);
+    background: url("../../assets/media/background-ffffff-logo.svg");*/
+    color: #999999;
 }
 
 @media (orientation: portrait)
@@ -577,13 +586,13 @@ main
     float: right;
     padding: 64px;
 
-    background: url("../../assets/media/background-accent-logo.svg");
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
     border-radius: 16px;
 }
 
 .mainLogoMid:hover, .mainLogoMid:active
 {
-    background: url("../../assets/media/background-long-mixed.svg");
+    background: url("../../assets/media/backgrounds/background-long-mixed.svg");
 }
 
 @media (orientation: portrait)
@@ -605,7 +614,7 @@ main
 .whatWeDo .defSectionBox
 {
 	background: var(--accentColor);
-    background: url(../../assets/media/background-accent-logo.svg);
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -671,7 +680,7 @@ main
 .ourWork .longCard:hover, .ourWork .longCard:active
 {
 	background: #eeeeee;
-    background: url(../../assets/media/background-eeeeee-logo.svg);
+    background: url("../../assets/media/backgrounds/background-eeeeee-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
 	color: #111111;
@@ -706,7 +715,7 @@ main
 {
     background: #ffffff;
     background: #eeeeee;
-    background: url(../../assets/media/background-ffffff-logo.svg);
+    background: url("../../assets/media/backgrounds/background-ffffff-logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -719,6 +728,24 @@ main
     color: #333333;
 }
 
+.aboutUs
+{
+    background: #000000;
+}
+.aboutUsInnerWrapper
+{
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+@media (orientation: portrait)
+{
+    .aboutUsInnerWrapper
+    {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
 /* Footer */
 
 footer
@@ -731,7 +758,9 @@ footer
 
     font-size: 10px;
 
-    background: #000000;
+    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
 @media (orientation: portrait)
