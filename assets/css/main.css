@@ -144,6 +144,21 @@ p {
     background: #333333;
 }
 
+.darkCTA
+{
+    background: #111111;
+    background: url("../../assets/media/backgrounds/background-1111111-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.darkCTA:active, .darkCTA:hover
+{
+    color: #ffffff;
+    background: #333333;
+}
+
 .quotedTextWrapper
 {
     margin-top: 20px;
@@ -775,6 +790,22 @@ main
     background-size: cover;
 }
 
+.ourWork .workCTA
+{
+    display: inline-block;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    margin-left: 128px;
+}
+
+@media (orientation: portrait)
+{
+    .ourWork .workCTA
+    {
+        margin-left: 32px;
+    }
+}
+
 .whyUs
 {
     color: #111111;
@@ -796,22 +827,6 @@ main
     color: var(--accentColor);
 }
 
-.whyUs .meetingCTA
-{
-    display: inline-block;
-    margin-top: 64px;
-    margin-bottom: 16px;
-    margin-left: 128px;
-}
-
-@media (orientation: portrait)
-{
-    .whyUs .meetingCTA
-    {
-        margin-left: 32px;
-    }
-}
-
 .whyUs .defSectionBox:hover, .whyUs .defSectionBox:active
 {
     background: #ffffff;
@@ -827,6 +842,22 @@ main
 }
 .whatWeDo .defSectionBox:hover p, .whatWeDo .defSectionBox:active p {
     color: #333333;
+}
+
+.whyUs .meetingCTA
+{
+    display: inline-block;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    margin-left: 128px;
+}
+
+@media (orientation: portrait)
+{
+    .whyUs .meetingCTA
+    {
+        margin-left: 32px;
+    }
 }
 
 .aboutUs
