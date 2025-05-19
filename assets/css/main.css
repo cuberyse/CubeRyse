@@ -888,6 +888,11 @@ main
     background-size: cover;  
 }
 
+.aboutUsBox h3
+{
+    padding-bottom: 16px;
+}
+
 .aboutUsBox:hover h3, .aboutUsBox:active h3
 {
     color: var(--accentColor);
