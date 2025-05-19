@@ -594,6 +594,7 @@ main
 .mainSection
 {
     padding: 128px;
+    padding-top: 150px;
     padding-bottom: 96px;
 }
 @media (orientation: portrait)
