@@ -144,6 +144,20 @@ p {
     background: #333333;
 }
 
+.quotedTextWrapper
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    font-size: larger;
+}
+
+.quotedText
+{
+    color: #eeeeee;
+}
+
 .accentText
 {
     color: var(--accentColor);
