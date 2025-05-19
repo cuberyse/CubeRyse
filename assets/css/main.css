@@ -745,6 +745,12 @@ main
     background-repeat: no-repeat;
     background-size: cover;
 }
+.resturantDWN .longCardImage
+{
+    background: url("../../assets/media/designs/mobile/dwnr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .ourWork .longCard:hover, .ourWork .longCard:active
 {
