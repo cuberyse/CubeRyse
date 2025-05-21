@@ -26,12 +26,10 @@ body
     font-style: normal;
     font-variation-settings: "wdth" 100;*/
 
-    margin: 0;
-
 	background: rgba(0, 0, 0, 0.1);
 }
 
-header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside
+header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body
 {
     margin: 0;
     padding: 0;
@@ -161,11 +159,11 @@ p {
 
 .quotedTextWrapper
 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-
+    padding: 4px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: larger;
+    display: block;
 }
 
 .quotedText
@@ -237,8 +235,7 @@ p {
 .sectionStripe
 {
     display: flex;
-
-
+    gap: 8px;
 
     padding: 0px;
     padding-top: 16px;
@@ -342,6 +339,7 @@ p {
 .longCard
 {
 	display: flex;
+    gap: 8px;
     overflow: hidden;
 
     margin-bottom: 32px;
@@ -405,6 +403,7 @@ p {
 {
     width: auto;
     display: flex;
+    gap: 8px;
     padding-left: 128px;
     padding-right: 128px;
 }
@@ -661,7 +660,8 @@ main
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    margin: 4px;
+
+    margin-bottom: 8px;
 }
 
 .whatWeDo .defSectionBox a
@@ -729,7 +729,6 @@ main
 .ourWork .longCardImage img
 {
     padding: 8px;
-    margin: 8px;
     border-radius: 4px;
     width: 8vw;
     height: fit-content;
