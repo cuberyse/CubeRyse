@@ -137,6 +137,17 @@ header, main, footer
 {
     display: inline-block;
 }
+@media (orientation: portrait)
+{
+    .defCTAWrapper ul
+    {
+        flex-direction: column;
+    }
+    .defCTAWrapper a
+    {
+        display: block;
+    }
+}
 .defaultCTA:active, .defaultCTA:hover
 {
     background-color: #eeeeee;
