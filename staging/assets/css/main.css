@@ -110,6 +110,13 @@ header, main, footer
     background-color: #111111;
     color: #eeeeee;
 }
+@media (orientation: portrait)
+{
+    .defaultCTA
+    {
+        font-size: 1rem;
+    }
+}
 .accentCTA
 {
     background-color: var(--accentColor);
