@@ -368,7 +368,8 @@ main
 {
     main
     {
-        padding-top: 64px;
+        padding-top: 0;
+        background-image: none;
     }
 }
 .mainCover
