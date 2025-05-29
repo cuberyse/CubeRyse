@@ -25,7 +25,6 @@ body
 
     color: #eeeeee;
     transition: all 0.2s ease;
-    overflow: hidden;
 }
 
 header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body, span, ul, li, hr, br
@@ -86,6 +85,7 @@ a {
 header, main, footer
 {
     text-align: center;
+    overflow: hidden;
     overflow: hidden;
 }
 
