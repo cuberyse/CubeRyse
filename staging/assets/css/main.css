@@ -360,7 +360,7 @@ main
     background-repeat: no-repeat;
     background-size: cover;*/
 
-    background-image: url("../../assets/media/backgrounds/pexels-danbuilds-633409.jpg");
+    background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -384,6 +384,9 @@ main
     {
         padding-top: 256px;
         padding-bottom: 128px;
+        background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
