@@ -39,7 +39,7 @@ header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body,
     border: none;
 }
 
-a, a:hover, a:active, a:visited
+a, a:active, a:hover, a:visited
 {
     text-decoration: none;
     color: inherit;
@@ -162,6 +162,11 @@ header, main, footer
   background: rgba(255, 255, 255, 0.1);        /* semi-transparent */
   backdrop-filter: blur(16px);                /* frosted glass blur */
   -webkit-backdrop-filter: blur(16px);        /* for Safari */
+}
+.quotedText
+{
+    padding-top: 64px;
+    padding-bottom: 40px;
 }
 
 /* cards */
@@ -291,7 +296,7 @@ header.scrolled
     display: block;
     padding: 8px;
 }
-.headerNav a:hover, .headerNav a:active
+.headerNav a:active, .headerNav a:hover
 {
     color: var(--accentColor);
 }
@@ -377,14 +382,6 @@ main
     background-color: #222222;
     transition: all 0.9s ease;
 }
-
-.whyUs
-{
-    background-image: url("../../assets/media/backgrounds/background-1111111-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .ourWork .defCard
 {
     padding: 8px;
@@ -401,6 +398,62 @@ main
     background-color: #222222;
     transition: all 0.4s ease;
 }
+
+.whyUs
+{
+    background-image: url("../../assets/media/backgrounds/background-1111111-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutUs
+{
+    background-color: #111111;
+}
+.aboutUs .defCard p, .aboutUs .defCard li
+{
+    display: block;
+    font-size: inherit;
+    text-align: left;
+    padding-top: 16px;
+}
+
+/* footer */
+footer
+{
+    padding: 64px;
+    padding-left: 256px;
+    padding-right: 256px;
+}
+.logoFooterLong
+{
+    width: 100%;
+    padding-bottom: 32px;
+}
+.footerSocialIcons
+{
+    font-size: 1rem;
+}
+.footerSocialIcons ul
+{
+    display: inline-flex;
+    gap: 8px;
+}
+.footerSocialIcons li
+{
+    display: block;
+}
+.footerSocialIcons a
+{
+    font-size: 1.2rem;
+    padding: 8px;
+}
+.footerSocialIcons a:active, .footerSocialIcons a:hover
+{
+    color: var(--accentColor);
+}
+
+/* featured work */
 .ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
 {
     background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
