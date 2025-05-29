@@ -24,12 +24,8 @@ body
     font-variation-settings: "wdth" 100;
 
     color: #eeeeee;
-
-    /*background-image: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;*/
-
     transition: all 0.2s ease;
+    overflow: hidden;
 }
 
 header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body, span, ul, li, hr, br
