@@ -425,6 +425,13 @@ footer
     padding-left: 256px;
     padding-right: 256px;
 }
+@media (orientation: portrait)
+{
+    footer
+    {
+        padding: 32px;
+    }
+}
 .logoFooterLong
 {
     width: 100%;
