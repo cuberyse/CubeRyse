@@ -1,0 +1,18 @@
+.tgwWeb .longCardImage
+{
+    background: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buorgu .longCardImage
+{
+    background: url("../../assets/media/designs/web/burogu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.resturantDWN .longCardImage
+{
+    background: url("../../assets/media/designs/mobile/dwnr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

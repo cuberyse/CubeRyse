@@ -1,0 +1,350 @@
+:root
+{
+    /*--accentColor: #0055bb;*/
+    --accentColor: rebeccapurple;
+}
+
+html
+{
+    background-color: #000000;
+    background-image: no-repeat url("../../assets/media/backgrounds/bg1.png");
+	background-size: cover;
+	
+    /*-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);*/
+}
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: unset;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: #eeeeee;
+
+    /*background-image: url("../../assets/media/backgrounds/background-accent-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body, span, ul, li, hr, br
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+a, a:hover, a:active, a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2
+{
+    font-weight: 300;
+}
+h3, h4, h5, h6
+{
+    font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+header, main, footer
+{
+    text-align: center;
+    overflow: hidden;
+}
+
+/* shared classes */
+.accentBackground
+{
+    background-color: var(--accentColor);
+}
+.accentText
+{
+    color: var(--accentColor);
+}
+.defaultCTA
+{
+    border-radius: 256px;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-size: 0.7rem;
+    background-color: #eeeeee;
+    color: #111111;
+}
+.accentCTA
+{
+    background-color: var(--accentColor);
+    color: #eeeeee;
+}
+.defSection
+{
+    padding: 64px;
+    padding-left: 256px;
+    padding-right: 256px;
+}
+@media (orientation: portrait)
+{
+    .defSection
+    {
+        padding: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+.sectionHead
+{
+    padding-bottom: 64px;
+}
+.frostedGlass {
+  background: rgba(255, 255, 255, 0.1);        /* semi-transparent */
+  backdrop-filter: blur(16px);                /* frosted glass blur */
+  -webkit-backdrop-filter: blur(16px);        /* for Safari */
+}
+
+/* cards */
+.defCardWrapper
+{
+    display: flex;
+    gap: 16px;
+}
+@media (orientation: portrait)
+{
+    .defCardWrapper
+    {
+        flex-direction: column;
+    }
+}
+.defCardColumn
+{
+    flex-direction: column;
+}
+.defCard
+{
+    flex: 1;
+    font-size: smaller;
+}
+.defCardLabels
+{
+    padding-top: 16px;
+    padding-bottom: 8px;
+    display: inline-flex;
+    gap: 4px;
+}
+.defCardLabels li
+{
+    font-size: 0.75rem;
+    display: inline-block;
+    background-color: var(--accentColor);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 256px;
+}
+
+/* body */
+
+/* header */
+header
+{
+    padding: 64px;
+    padding-left: 256px;
+    padding-right: 256px;
+
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+}
+@media (orientation: portrait)
+{
+    header
+    {
+        padding: 32px;
+    }
+}
+.headerLogo, .headerNav, .headerSocialIcons
+{
+    display: inline-block
+}
+
+.headerLogo
+{
+    float: inline-start;
+}
+.logoAbstract
+{
+    height: 32px;
+}
+.logoWordmark
+{
+    height: 16px;
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+@media (orientation: portrait)
+{
+    .logoWordmark
+    {
+        display: none;
+    }
+}
+
+.headerNav
+{
+    float: none;
+}
+.headerNav ul
+{
+    display: flex;
+    gap: 4px;
+}
+.headerNav li
+{
+    flex: auto;
+    display: inline-block;
+}
+.headerNav a
+{
+    display: block;
+    padding: 8px;
+}
+.headerNav a:hover, .headerNav a:active
+{
+    color: var(--accentColor);
+}
+@media (orientation: portrait)
+{
+    .headerNav
+    {
+        float: right;
+        display: none;
+    }
+    .headerNav ul
+    {
+        flex-direction: column;
+    }
+}
+
+.headerSocialIcons
+{
+    float: inline-end;
+}
+.headerSocialIcons ul
+{
+    display: flex;
+    gap: 4px;
+}
+.headerSocialIcons li
+{
+    flex: auto;
+    display: inline-block;
+}
+.headerSocialIcons a
+{
+    display: block;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+.headerSocialIcons a:active, .headerSocialIcons a:hover
+{
+    color: var(--accentColor);
+}
+
+/* main */
+main
+{
+    padding-top: 80px;
+    padding-bottom: 64px;
+    /*background-image: url("../../assets/media/backgrounds/pexels-asim-razan-32997.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+@media (orientation: portrait)
+{
+    main
+    {
+        padding-bottom: 32px;
+        padding-top: 64px;
+    }
+}
+.mainCover
+{
+    position: unset;
+    font-size: larger;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.mainCoverCTA
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: smaller;
+}
+.mainCoverCTA ul
+{
+    display: inline-flex;
+    gap: 16px;
+}
+.mainCoverCTA li
+{
+    display: inline-block;
+}
+.mainCoverCTA .defaultCTA
+{
+    color: #eeeeee;
+}
+.mainCoverCTA .defaultCTA:active, .mainCoverCTA .defaultCTA:hover
+{
+    background-color: #eeeeee;
+    color: var(--accentColor);
+}
+
+.whatWeDo
+{
+    background-color: #222222;
+}
+
+.ourWork
+{
+    background-color: #111111;
+}
