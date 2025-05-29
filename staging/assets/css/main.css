@@ -1,7 +1,8 @@
 :root
 {
-    /*--accentColor: #0055bb;*/
-    --accentColor: rebeccapurple;
+    /*--accentColor: #0055bb;
+    --accentColor: rebeccapurple;*/
+    --accentColor: #663388;
 }
 
 html
@@ -27,6 +28,8 @@ body
     /*background-image: url("../../assets/media/backgrounds/background-accent-logo.svg");
     background-repeat: no-repeat;
     background-size: contain;*/
+
+    transition: all 0.2s ease;
 }
 
 header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body, span, ul, li, hr, br
@@ -40,6 +43,7 @@ a, a:hover, a:active, a:visited
 {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease;
 }
 
 h1, h2
@@ -107,13 +111,33 @@ header, main, footer
     padding-right: 24px;
 
     font-size: 0.7rem;
-    background-color: #eeeeee;
-    color: #111111;
+    background-color: #111111;
+    color: #eeeeee;
 }
 .accentCTA
 {
     background-color: var(--accentColor);
     color: #eeeeee;
+}
+.defCTAWrapper
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: smaller;
+}
+.defCTAWrapper ul
+{
+    display: inline-flex;
+    gap: 16px;
+}
+.defCTAWrapper li
+{
+    display: inline-block;
+}
+.defaultCTA:active, .defaultCTA:hover
+{
+    background-color: #eeeeee;
+    color: var(--accentColor);
 }
 .defSection
 {
@@ -155,12 +179,19 @@ header, main, footer
 }
 .defCardColumn
 {
+    flex: 1;
     flex-direction: column;
+    display: flex;
+    gap: 16px;
 }
 .defCard
 {
     flex: 1;
     font-size: smaller;
+}
+.defCard img
+{
+    width: 16vh;
 }
 .defCardLabels
 {
@@ -189,14 +220,26 @@ header
     padding-left: 256px;
     padding-right: 256px;
 
-    /*position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;*/
+    right: 0;
+    background-color: transparent;
+    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    transition: background-color 0.6s ease;
+}
+header.scrolled
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #000000; /* Color when scrolled */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 @media (orientation: portrait)
 {
-    header
+    header, header.scrolled
     {
         padding: 32px;
     }
@@ -293,58 +336,86 @@ header
 /* main */
 main
 {
-    padding-top: 80px;
     padding-bottom: 64px;
     /*background-image: url("../../assets/media/backgrounds/pexels-asim-razan-32997.jpg");
     background-repeat: no-repeat;
     background-size: cover;*/
+
+    background-image: url("../../assets/media/backgrounds/pexels-danbuilds-633409.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 @media (orientation: portrait)
 {
     main
     {
-        padding-bottom: 32px;
         padding-top: 64px;
     }
 }
 .mainCover
 {
-    position: unset;
     font-size: larger;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 320px;
+    padding-bottom: 200px;
 }
-.mainCoverCTA
+@media (orientation: portrait)
 {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: smaller;
-}
-.mainCoverCTA ul
-{
-    display: inline-flex;
-    gap: 16px;
-}
-.mainCoverCTA li
-{
-    display: inline-block;
-}
-.mainCoverCTA .defaultCTA
-{
-    color: #eeeeee;
-}
-.mainCoverCTA .defaultCTA:active, .mainCoverCTA .defaultCTA:hover
-{
-    background-color: #eeeeee;
-    color: var(--accentColor);
+    .mainCover
+    {
+        padding-top: 256px;
+        padding-bottom: 128px;
+    }
 }
 
 .whatWeDo
 {
-    background-color: #222222;
+    background-color: #111111;
 }
 
 .ourWork
 {
-    background-color: #111111;
+    background-color: #222222;
+    transition: all 0.9s ease;
+}
+
+.whyUs
+{
+    background-image: url("../../assets/media/backgrounds/background-1111111-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ourWork .defCard
+{
+    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 16px;
+}
+.ourWork .defCard h3
+{
+    color: #eeeeee;
+}
+.ourWork .defCard:active, .ourWork .defCard:hover
+{
+    background-color: #222222;
+    transition: all 0.4s ease;
+}
+.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
+{
+    background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ourWork:has(.thegw:active), .ourWork:has(.thegw:hover)
+{
+    background-image: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ourWork:has(.burgu:active), .ourWork:has(.burgu:hover)
+{
+    background-image: url("../../assets/media/designs/web/burogu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
