@@ -452,23 +452,3 @@ footer
 {
     color: var(--accentColor);
 }
-
-/* featured work */
-.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
-{
-    background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.ourWork:has(.thegw:active), .ourWork:has(.thegw:hover)
-{
-    background-image: url("../../assets/media/designs/web/thegoodwincover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.ourWork:has(.burgu:active), .ourWork:has(.burgu:hover)
-{
-    background-image: url("../../assets/media/designs/web/burogu.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}

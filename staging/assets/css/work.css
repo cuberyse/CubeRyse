@@ -1,18 +1,19 @@
-.tgwWeb .longCardImage
+/* featured work */
+.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
 {
-    background: url("../../assets/media/designs/web/thegoodwincover.jpg");
+    background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.buorgu .longCardImage
+.ourWork:has(.thegw:active), .ourWork:has(.thegw:hover)
 {
-    background: url("../../assets/media/designs/web/burogu.jpg");
+    background-image: url("../../assets/media/designs/web/thegoodwincover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.resturantDWN .longCardImage
+.ourWork:has(.burgu:active), .ourWork:has(.burgu:hover)
 {
-    background: url("../../assets/media/designs/mobile/dwnr.jpg");
+    background-image: url("../../assets/media/designs/web/burogu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
