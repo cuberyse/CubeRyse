@@ -42,6 +42,10 @@ a, a:active, a:hover, a:visited
     transition: color 0.2s ease;
     font-weight: bold;
 }
+a:visited
+{
+    color: initial;
+}
 
 h1, h2, h3, h4, h5, h6
 {
@@ -109,6 +113,10 @@ header, main, footer
     color: #eeeeee;
     font-weight: bold;
     transition: all 0.4s ease;
+}
+.defaultCTA:visited
+{
+    color: #eeeeee;
 }
 @media (orientation: portrait)
 {
