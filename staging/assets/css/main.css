@@ -117,7 +117,7 @@ header, main, footer
 {
     .defaultCTA
     {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 }
 .accentCTA
