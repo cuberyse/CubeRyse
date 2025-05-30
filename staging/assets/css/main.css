@@ -1,13 +1,14 @@
 :root
 {
-    /*--accentColor: #0055bb;
-    --accentColor: rebeccapurple;*/
+    --accentColor: #0055bb;
+    /*--accentColor: rebeccapurple;
     --accentColor: #663388;
+    --accentColor: #00aa33;*/
 }
 
 html
 {
-    background-color: #000000;
+    background-color: #ffffff;
     background-image: no-repeat url("../../assets/media/backgrounds/bg1.png");
 	background-size: cover;
 	
@@ -23,7 +24,7 @@ body
     font-style: normal;
     font-variation-settings: "wdth" 100;
 
-    color: #eeeeee;
+    color: #111111;
     transition: all 0.2s ease;
 }
 
@@ -39,6 +40,7 @@ a, a:active, a:hover, a:visited
     text-decoration: none;
     color: inherit;
     transition: color 0.2s ease;
+    font-weight: bold;
 }
 
 h1, h2
@@ -109,6 +111,7 @@ header, main, footer
     font-size: 0.7rem;
     background-color: #111111;
     color: #eeeeee;
+    font-weight: bold;
 }
 @media (orientation: portrait)
 {
@@ -120,11 +123,10 @@ header, main, footer
 .accentCTA
 {
     background-color: var(--accentColor);
-    color: #eeeeee;
 }
 .defCTAWrapper
 {
-    padding-top: 32px;
+    padding-top: 64px;
     padding-bottom: 32px;
     font-size: smaller;
 }
@@ -150,8 +152,8 @@ header, main, footer
 }
 .defaultCTA:active, .defaultCTA:hover
 {
-    background-color: #eeeeee;
-    color: var(--accentColor);
+    background-color: #333333;
+    color: #eeeeee;
 }
 .defSection
 {
@@ -173,7 +175,7 @@ header, main, footer
     padding-bottom: 64px;
 }
 .frostedGlass {
-  background: rgba(255, 255, 255, 0.1);        /* semi-transparent */
+  background: rgba(0, 0, 0, 0.4);        /* semi-transparent */
   backdrop-filter: blur(16px);                /* frosted glass blur */
   -webkit-backdrop-filter: blur(16px);        /* for Safari */
 }
@@ -212,10 +214,22 @@ header, main, footer
 {
     width: 16vh;
 }
+.defCard h3
+{
+    padding-bottom: 16px;
+}
+.defCard h4
+{
+    padding-bottom: 8px;
+}
+.defCard p
+{
+    text-align: justify;
+}
 .defCardLabels
 {
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 16px;
     display: inline-flex;
     gap: 4px;
 }
@@ -223,7 +237,8 @@ header, main, footer
 {
     font-size: 0.75rem;
     display: inline-block;
-    background-color: var(--accentColor);
+    background-color: #111111;
+    color: #eeeeee;
     padding: 4px;
     padding-left: 8px;
     padding-right: 8px;
@@ -235,7 +250,7 @@ header, main, footer
 /* header */
 header
 {
-    padding: 64px;
+    padding: 32px;
     padding-left: 256px;
     padding-right: 256px;
 
@@ -246,13 +261,13 @@ header
     background-color: transparent;
     transition: box-shadow 0.3s ease;
     transition: all 0.3s ease;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.8s ease;
 }
 header.scrolled
 {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #000000; /* Color when scrolled */
+    background-color: #eeeeee; /* Color when scrolled */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
@@ -355,78 +370,83 @@ header.scrolled
 /* main */
 main
 {
-    padding-bottom: 64px;
+    padding-top: 64px;
+    padding-bottom: 16px;
     /*background-image: url("../../assets/media/backgrounds/pexels-asim-razan-32997.jpg");
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 
     background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
 }
 @media (orientation: portrait)
 {
     main
     {
-        padding-top: 0;
+        padding-top: 64px;
         background-image: none;
     }
 }
 .mainCover
 {
     font-size: larger;
-    padding-top: 320px;
-    padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 128px;
 }
 @media (orientation: portrait)
 {
     .mainCover
     {
-        padding-top: 256px;
-        padding-bottom: 128px;
-        background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding-top: 128px;
+        padding-bottom: 64px;
     }
 }
 
 .whatWeDo
 {
-    background-color: #111111;
+    background-color: #eeeeee;
 }
 
 .ourWork
 {
-    background-color: #222222;
-    transition: all 0.9s ease;
+    transition: all 0.8s ease;
 }
 .ourWork .defCard
 {
-    padding: 8px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-radius: 16px;
+}
+.ourWork .defCard .cardImageWrapper
+{
+    border-radius: 16px 16px 0 0;
+    border-radius: 16px;
+    margin-bottom: 32px;
+
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+.ourWork .defCard .cardImageWrapper img
+{
+    width: 100%;
 }
 .ourWork .defCard h3
 {
-    color: #eeeeee;
+    color: #111111;
 }
 .ourWork .defCard:active, .ourWork .defCard:hover
 {
-    background-color: #222222;
     transition: all 0.4s ease;
 }
 
 .whyUs
 {
-    background-image: url("../../assets/media/backgrounds/background-1111111-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #eeeeee;
 }
 
 .aboutUs
 {
-    background-color: #111111;
+    background-color: #eeeeee;
 }
 .aboutUs .defCard p, .aboutUs .defCard li
 {
@@ -442,6 +462,7 @@ footer
     padding: 64px;
     padding-left: 256px;
     padding-right: 256px;
+    padding-top: 48px;
 }
 @media (orientation: portrait)
 {
@@ -454,6 +475,7 @@ footer
 {
     width: 100%;
     padding-bottom: 32px;
+    display: none;
 }
 .footerSocialIcons
 {

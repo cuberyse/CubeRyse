@@ -1,5 +1,5 @@
 /* featured work */
-.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
+/*.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
 {
     background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
     background-repeat: no-repeat;
@@ -16,4 +16,4 @@
     background-image: url("../../assets/media/designs/web/burogu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
