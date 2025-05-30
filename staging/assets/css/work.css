@@ -1,4 +1,3 @@
-/* featured work */
 /*.ourWork:has(.dewan:active), .ourWork:has(.dewan:hover)
 {
     background-image: url("../../assets/media/designs/mobile/dwnr.jpg");
@@ -17,3 +16,53 @@
     background-repeat: no-repeat;
     background-size: cover;
 }*/
+
+.sectionHead
+{
+    display: none;
+}
+
+.defCardWrapper
+{
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.defCard
+{
+    padding-bottom: 32px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: all 0.4s ease;
+    transition: box-shadow 0.4s ease;
+    transition: color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+.defCard h3, .defCard h4, .defCard p, .defCard ul
+{
+    padding-left: 16px; 
+    padding-right: 16px;
+}
+.ourWork .defCard .cardImageWrapper
+{
+    border-radius: 0;
+    border-radius: 16px 16px 0 0;
+}
+
+.defCard:active, .defCard:hover
+{
+    background-color: #ffffff;
+}
+.defCard:active h3, .defCard:hover h3
+{
+    color: var(--accentColor);
+}
+.defCard:active li, .defCard:hover li
+{
+    background-color: var(--accentColor)
+}
+
+.dewan .cardImageWrapper
+{
+    height: 512px !important;
+}
