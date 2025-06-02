@@ -66,3 +66,15 @@
 {
     height: 512px !important;
 }
+
+@media (orientation: portrait)
+{
+    .dewan .cardImageWrapper
+    {
+        height: initial !important;
+    }
+    .defCard img
+    {
+        width: 10vh;
+    }
+}
