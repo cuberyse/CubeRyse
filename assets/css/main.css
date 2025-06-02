@@ -1,14 +1,15 @@
 :root
 {
     --accentColor: #0055bb;
-    /*--accentColor: #ffcc00;*/
-    --themeColor: #000022;
+    /*--accentColor: rebeccapurple;
+    --accentColor: #663388;
+    --accentColor: #00aa33;*/
 }
 
 html
 {
-    background: #000;
-    background: no-repeat url("../../assets/media/backgrounds/bg1.png");
+    background-color: #ffffff;
+    background-image: no-repeat url("../../assets/media/backgrounds/bg1.png");
 	background-size: cover;
 	
     /*-webkit-backdrop-filter: blur(10px);
@@ -17,517 +18,294 @@ html
 
 body
 {
-    color: #eeeeee;
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    /*font-weight: <weight>;
+    font-weight: unset;
     font-style: normal;
-    font-variation-settings: "wdth" 100;*/
+    font-variation-settings: "wdth" 100;
 
-	background: rgba(0, 0, 0, 0.1);
+    color: #111111;
+    transition: all 0.2s ease;
 }
 
-header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body
+header, footer, main, div, section, h1, h2, h3, h4, h5, h6, p, nav, aside, body, span, ul, li, hr, br
 {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
-a
+a, a:active, a:hover, a:visited
 {
     text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+    font-weight: bold;
+}
+a:visited
+{
+    color: initial;
 }
 
-h1
+h1, h2, h3, h4, h5, h6
 {
-    font-size: 2.5rem; /* ~40px */
-    font-size: 2rem;    /* ~32px */
+    font-weight: 350;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.75rem; /* ~28px */
+  font-size: 1.75rem;
 }
 
 h3 {
-    font-size: 1.5rem;  /* ~24px */
+  font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25rem; /* ~20px */
+  font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 1rem;    /* ~16px */
+  font-size: 1.125rem;
 }
 
 h6 {
-    font-size: 1rem;    /* ~16px */
+  font-size: 1rem;
 }
 
 p {
-    font-size: 0.875rem; /* 14px */
+  font-size: 0.95rem;
 }
 
-/* Common Classes */
+a {
+  font-size: 0.8rem;
+}
 
-.largeText
+header, main, footer
 {
-    font-size: 64px;
+    text-align: center;
+    overflow: hidden;
+    overflow: hidden;
 }
 
-.mediumText
+/* shared classes */
+.accentBackground
 {
-    font-size: 28px;
+    background-color: var(--accentColor);
 }
-
-.smallText
+.accentText
 {
-    font-size: 18px;
+    color: var(--accentColor);
 }
-
 .defaultCTA
 {
-    font-size: 16px;
+    border-radius: 256px;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
 
-    padding: 14px;
-    padding-left: 28px;
-    padding-right: 28px;
-
-    margin: 4px;
-
-    font-weight:bolder;
+    font-size: 0.7rem;
+    background-color: #111111;
+    color: #eeeeee;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+.defaultCTA:visited
+{
+    color: #eeeeee;
 }
 @media (orientation: portrait)
 {
     .defaultCTA
     {
-        font-size: 14px;
-        padding: 12px;
-        padding-left: 22px;
-        padding-right: 22px;
-
-        margin: 2px;
+        font-size: 0.85rem;
     }
 }
-
 .accentCTA
 {
-    background: var(--accentColor);
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
+    background-color: var(--accentColor);
 }
-
-.accentCTA:active, .accentCTA:hover
+.defCTAWrapper
 {
-    color: #ffffff;
-    background: #333333;
-}
-
-.stdCTA
-{
-    background: #ffffff;
-    background: url("../../assets/media/backgrounds/background-ffffff-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #000000;
-}
-
-.stdCTA:active, .stdCTA:hover
-{
-    color: #ffffff;
-    background: #333333;
-}
-
-.darkCTA
-{
-    background: #111111;
-    background: url("../../assets/media/backgrounds/background-1111111-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-}
-
-.darkCTA:active, .darkCTA:hover
-{
-    color: #ffffff;
-    background: #333333;
-}
-
-.quotedTextWrapper
-{
-    padding: 4px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: larger;
-    display: block;
-}
-
-.quotedText
-{
-    color: #eeeeee;
-}
-
-.accentText
-{
-    color: var(--accentColor);
-}
-
-.accentBackground
-{
-    background: var(--accentColor);
-}
-
-.iconSocial
-{
-    width: fit-content;
-    display: inline;
-}
-
-.iconSocial a {
-    padding: 8px;
-    
-    color: #eeeeee;
-
-    display: inline-block;
-    text-align: center;
-}
-
-.iconSocial a:active, .iconSocial a:hover
-{
-    /*color: var(--accentColor);
-    background: #ffffff;*/
-    color: #999999;
-}
-
-.defSection
-{
-    display: block;
-    overflow: hidden;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
+    font-size: smaller;
 }
-
-.sectionHead
+.defCTAWrapper ul
 {
-    padding: 128px;
-    padding-top: 16px;
-    padding-bottom: 48px;
+    display: inline-flex;
+    gap: 16px;
 }
-
+.defCTAWrapper li
+{
+    display: inline-block;
+}
 @media (orientation: portrait)
 {
-    .sectionHead
+    .defCTAWrapper ul
     {
-        padding-left: 32px;
-        padding-right: 32px;
+        flex-direction: column;
+    }
+    .defCTAWrapper a
+    {
+        display: block;
     }
 }
-
-.stripeWrapper
+.defaultCTA:active, .defaultCTA:hover
 {
-    display: block;
+    background-color: #333333;
+    color: #eeeeee;
+}
+.defSection
+{
+    padding: 64px;
+    padding-left: 256px;
+    padding-right: 256px;
+}
+@media (orientation: portrait)
+{
+    .defSection
+    {
+        padding: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+.sectionHead
+{
+    padding-bottom: 64px;
+}
+.frostedGlass {
+  background: rgba(0, 0, 0, 0.4);        /* semi-transparent */
+  backdrop-filter: blur(16px);                /* frosted glass blur */
+  -webkit-backdrop-filter: blur(16px);        /* for Safari */
+}
+.quotedText
+{
+    padding-top: 64px;
+    padding-bottom: 40px;
 }
 
-.sectionStripe
+/* cards */
+.defCardWrapper
 {
     display: flex;
-    gap: 8px;
-
-    padding: 0px;
-    padding-top: 16px;
+    gap: 16px;
+}
+@media (orientation: portrait)
+{
+    .defCardWrapper
+    {
+        flex-direction: column;
+    }
+}
+.defCardColumn
+{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+}
+.defCard
+{
+    flex: 1;
+    font-size: smaller;
+}
+.defCard img
+{
+    width: 10vh;
+}
+.defCard h3
+{
     padding-bottom: 16px;
 }
-
-.sectionStripe:hover, .sectionStripe:active
+.defCard h4
 {
-   background: rgba(255, 255, 255, 0.1)
+    padding-bottom: 8px;
 }
-
-.stripeSectionIcon, .stripeSectionHeading, .stripeSectionPara
-{
-    overflow: hidden;
-}
-
-.stripeSectionIcon
-{
-    padding: 4px;
-}
-
-.stripeSectionHeading
-{
-    padding: 8px;
-    font-size: larger;
-	padding: 10px;
-}
-
-.stripeSectionPara
-{
-    padding: 8px;
-}
-
-.stripeSectionIcon img
-{
-    height: 64px;
-    width: 100%;
-    background: var(--accentColor);
-
-}
-
-.stripeSectionPara, .stripeSectionPara p
+.defCard p
 {
     text-align: justify;
 }
-.stripeSectionIcon 
+.defCardLabels
 {
-    flex: 1;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    display: inline-flex;
+    gap: 4px;
 }
-
-.stripeSectionHeading 
+.defCardLabels li
 {
-    flex: 1;
-}
-
-.stripeSectionPara 
-{
-    flex: 4;
-}
-
-@media (orientation: portrait)
-{
-    .sectionStripe
-    {
-        display: block;
-		padding-top: 0;
-		padding-bottom: 8px;
-    }
-    .stripeSectionIcon
-    {
-        display: inline;
-        padding: 0;
-    }
-    .stripeSectionHeading 
-    {
-        display: inline-flex;
-        padding-top: 16px;
-    }
-    .stripeSectionPara
-    {
-        display: block;
-        padding-top: 16px;
-    }
-}
-
-.longCardWrapper
-{
-    display: block;
-    padding-left: 128px;
-    padding-right: 128px;
-}
-@media (orientation: portrait)
-{
-    .longCardWrapper
-    {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-.longCard
-{
-	display: flex;
-    gap: 8px;
-    overflow: hidden;
-
-    margin-bottom: 32px;
-}
-
-.longCardImage
-{
-	flex: 2;
-	overflow: hidden;
-}
-
-.longCardImage img
-{
-	width: 100%;
-	max-height: 512px;
-}
-
-.longCardContent
-{
-	flex: 1;
-	padding: 32px;
-	text-align: justify;
-}
-
-.workStackLabel
-{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     display: inline-block;
-    
+    background-color: #111111;
+    color: #eeeeee;
     padding: 4px;
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 32px;
-    color: #ffffff;
-
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 256px;
 }
 
-@media (orientation: portrait)
-{
-	.longCard
-	{
-  		flex-direction: column;
-	}
-	.longCardImage
-	{
-		order: 1;
-	}
-	.longCardContent
-	{
-		order: 2;
-	}
-}
+/* body */
 
-.defSectionBoxWrapper
-{
-    width: auto;
-    display: flex;
-    gap: 8px;
-    padding-left: 128px;
-    padding-right: 128px;
-}
-@media (orientation: portrait)
-{
-    .defSectionBoxWrapper
-    {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-.defSectionBox
-{
-    flex: 1;
-
-    text-align: justify;
-    padding: 32px;
-    overflow: hidden;
-}
-
-.defSectionBox img
-{
-    width: 128px;
-}
-
-.defSectionBoxHeading
-{
-    margin-bottom: 16px;
-}
-
-.defSectionBox a
-{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 12px;
-
-    margin-top: 16px;
-
-    display: inline-block;
-}
-
-.defSectionBox:hover, .defSectionBox:active
-{
-    background: rgba(0, 0, 0, 0.1);
-}
-
-@media (orientation: portrait)
-{
-    .defSectionBoxWrapper
-    {
-        display: block;
-    }
-    .defSectionBox
-    {
-        display: block;
-    }
-	.defSectionBoxHeading
-	{
-		text-align: left;
-	}
-}
-
-/* Header */
-
+/* header */
 header
 {
-    padding: 128px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    width: auto;
-
-    /*background: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(10px);
-  	-webkit-backdrop-filter: blur(10px);*/
-    background: #000000;
-    background: url("../../assets/media/backgrounds/background-long-mixed-2.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 32px;
+    padding-left: 256px;
+    padding-right: 256px;
 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
-    display: table-cell;
-    vertical-align: middle;
-
-    text-align: right;
+    background-color: transparent;
+    transition: box-shadow 0.4s ease;
+    transition: all 0.4s ease;
+    transition: background-color 0.8s ease;
 }
-
+header.scrolled
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #eeeeee; /* Color when scrolled */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
 @media (orientation: portrait)
 {
-    header
+    header, header.scrolled
     {
         padding: 32px;
-        padding-top: 16px;
-        padding-bottom: 16px;
     }
+}
+.headerLogo, .headerNav, .headerSocialIcons
+{
+    display: inline-block
 }
 
 .headerLogo
 {
-    float: left;
+    float: inline-start;
 }
-
-.headerLogo a
+.logoAbstract
 {
-    display: block;
-}
-
-.logoAbstract {
     height: 32px;
 }
-
-.logoWritten {
+.logoWordmark
+{
     height: 16px;
-    padding: 8px;
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
-
 @media (orientation: portrait)
 {
-    .logoWritten
+    .logoWordmark
     {
         display: none;
     }
@@ -535,398 +313,210 @@ header
 
 .headerNav
 {
-    margin-left: 32px;
-    margin-right: 32px;
-    display: inline;
+    float: none;
 }
-
+.headerNav ul
+{
+    display: flex;
+    gap: 4px;
+}
+.headerNav li
+{
+    flex: auto;
+    display: inline-block;
+}
 .headerNav a
 {
-    height: 32px;
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
+    padding: 8px;
 }
-
-.headerNav p
+.headerNav a:active, .headerNav a:hover
 {
-    color: #eeeeee;
-    padding: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 1.15rem;
-
-    margin-left: 4px;
-    margin-right: 4px;
-
-    /*background: var(--accentColor);*/
+    color: var(--accentColor);
 }
-
-.headerNav p:active, .headerNav p:hover
-{
-    /*color: var(--accentColor);
-    background: url("../../assets/media/background-ffffff-logo.svg");*/
-    color: #999999;
-}
-
 @media (orientation: portrait)
 {
     .headerNav
     {
-        display: flex;
-        flex-direction: column;
+        float: right;
         display: none;
     }
-}
-
-.iconSocialHeader
-{
-    font-size: 22px;
-    display: flex;
-    float: right;
-    height: 32px;
-    overflow: hidden;
-}
-
-.iconSocialHeader a
-{
-    flex: 1;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-/* Main */
-
-main
-{
-    display: block;
-    padding-top: 96px;
-}
-
-.mainSection
-{
-    padding: 128px;
-    padding-top: 150px;
-    padding-bottom: 96px;
-}
-@media (orientation: portrait)
-{
-    .mainSection
+    .headerNav ul
     {
-        padding: 32px;
-        padding-top: 96px;
-        padding-bottom: 96px;
+        flex-direction: column;
     }
 }
 
-.mainLogoMid
+.headerSocialIcons
 {
-    height: 20vw;
-    float: right;
-    padding: 64px;
-
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    border-radius: 16px;
+    float: inline-end;
+}
+.headerSocialIcons ul
+{
+    display: flex;
+    gap: 4px;
+}
+.headerSocialIcons li
+{
+    flex: auto;
+    display: inline-block;
+}
+.headerSocialIcons a
+{
+    display: block;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+.headerSocialIcons a:active, .headerSocialIcons a:hover
+{
+    color: var(--accentColor);
 }
 
-.mainLogoMid:hover, .mainLogoMid:active
+/* main */
+main
 {
-    background: url("../../assets/media/backgrounds/background-long-mixed.svg");
-}
+    padding-top: 64px;
+    padding-bottom: 16px;
+    /*background-image: url("../../assets/media/backgrounds/pexels-asim-razan-32997.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
 @media (orientation: portrait)
 {
-	.mainLogoMid
-	{
-		float: none;
-        padding: 8px;
-        height: 40vw;
-        margin-bottom: 64px;
-	}
+    main
+    {
+        padding-top: 64px;
+        background-image: none;
+    }
+}
+.mainCover
+{
+    font-size: larger;
+    padding-top: 200px;
+    padding-bottom: 72px;
+}
+@media (orientation: portrait)
+{
+    .mainCover
+    {
+        padding-top: 128px;
+        padding-bottom: 48px;
+    }
 }
 
 .whatWeDo
 {
-    background: #eee;
-    color: #000000;
+    background-color: #eeeeee;
 }
-
-.whatWeDo .defSectionBox
-{
-	background: var(--accentColor);
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-
-    margin-bottom: 8px;
-}
-
-.whatWeDo .defSectionBox a
-{
-    color: #ffffff;
-}
-
-.whatWeDo .defSectionBox:hover, .whatWeDo .defSectionBox:active
-{
-    background: #ffffff;
-    color: var(--accentColor);
-}
-
-.whatWeDo .defSectionBox:hover h3, .whatWeDo .defSectionBox:active h3
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox:hover p, .whatWeDo .defSectionBox:active p {
-    color: #333333;
-}
-.whatWeDo .defSectionBox:hover a, .whatWeDo .defSectionBox:active a
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox a:hover, .whatWeDo .defSectionBox a:active
-{
-    color: #000000;
-}
-
-/*
-.whatWeDo .sectionStripe
-{
-	margin-bottom: 2px;
-}
-
-.whatWeDo .sectionStripe:hover, .whatWeDo .sectionStripe:active
-{
-    background: rgba(255, 255, 255, 0.1);
-}
-*/
 
 .ourWork
 {
-	background: #ddd;
-    color: #000000;
+    transition: all 0.8s ease;
 }
-
-.ourWork .longCard
+.ourWork .defCard
 {
-	background: #ffffff;
-	color: #000000;
+    border-radius: 16px;
 }
-
-.ourWork .longCard h3
+.ourWork .defCard .cardImageWrapper
 {
-	color: var(--accentColor);
-}
+    border-radius: 16px 16px 0 0;
+    border-radius: 16px;
+    margin-bottom: 32px;
 
-.ourWork .longCardImage
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+.ourWork .defCard .cardImageWrapper img
 {
-    height: 480px;
-    min-height: 480px;
+    width: 100%;
 }
-
-.ourWork .longCardImage img
+.ourWork .defCard h3
 {
-    padding: 8px;
-    border-radius: 4px;
-    width: 8vw;
-    height: fit-content;
-    background: rgba(0, 0, 0, 0.4);
+    color: #111111;
 }
-
-@media (orientation: portrait)
+.ourWork .defCard:active, .ourWork .defCard:hover
 {
-    .ourWork .longCardImage
-    {
-        height: 256px;
-        min-height: 256px;
-    }
-    .ourWork .longCardImage img
-    {
-        width: 20vw;
-    }
-}
-
-.ourWork .longCard:hover, .ourWork .longCard:active
-{
-	background: #eeeeee;
-    background: url("../../assets/media/backgrounds/background-eeeeee-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-	color: #111111;
-}
-
-.ourWork .longCard:hover p, .longCard .defSectionBox:active p {
-    color: #333333;
-}
-
-.ourWork .longCard:active .workStackLabel, .ourWork .longCard:hover .workStackLabel
-{
-    color: #ffffff;
-
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.ourWork .workCTA
-{
-    display: inline-block;
-    margin-top: 64px;
-    margin-bottom: 16px;
-    margin-left: 128px;
-}
-
-@media (orientation: portrait)
-{
-    .ourWork .workCTA
-    {
-        margin-left: 32px;
-    }
+    transition: all 0.4s ease;
 }
 
 .whyUs
 {
-    color: #111111;
-    background: #eeeeee;
+    background-color: #eeeeee;
 }
-
-.whyUs .defSectionBox
+.whyUs .defCard .cardImageWrapper
 {
-    background: #eeeeee;
-}
-
-.whyUs .defSectionBox img
-{
-    margin-bottom: 16px;
-}
-
-.whyUs .defSectionBox h3
-{
-    color: var(--accentColor);
-}
-
-.whyUs .defSectionBox:hover, .whyUs .defSectionBox:active
-{
-    background: #ffffff;
-    background: #eeeeee;
-    background: url("../../assets/media/backgrounds/background-ffffff-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.whatWeDo .defSectionBox:hover h3, .whatWeDo .defSectionBox:active h3
-{
-    color: var(--accentColor);
-}
-.whatWeDo .defSectionBox:hover p, .whatWeDo .defSectionBox:active p {
-    color: #333333;
-}
-
-.whyUs .meetingCTA
-{
+    border-radius: 1024px;
+    border: 2px solid #999999;
     display: inline-block;
-    margin-top: 64px;
     margin-bottom: 16px;
-    margin-left: 128px;
+    margin-top: 16px;
 }
-
-@media (orientation: portrait)
+.whyUs .defCard .cardImageWrapper img
 {
-    .whyUs .meetingCTA
-    {
-        margin-left: 32px;
-    }
+    padding: 24px;
 }
 
 .aboutUs
 {
-    background: #000000;
+    background-color: #eeeeee;
 }
-.aboutUsInnerWrapper
+.aboutUs .defCardColumn
 {
-    padding-left: 128px;
-    padding-right: 128px;
+    gap: 64px;
+}
+.aboutUs .defCard p, .aboutUs .defCard li
+{
+    display: block;
+    font-size: inherit;
+    text-align: left;
+    padding-top: 16px;
 }
 
-.aboutUsBox
-{
-    padding: 32px;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    background: url("../../assets/media/backgrounds/background-1111111-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
-
-.aboutUsBox:hover, .aboutUsBox:active
-{
-    color: #111111;
-    background: url("../../assets/media/backgrounds/background-eeeeee-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
-
-.aboutUsBox h3
-{
-    padding-bottom: 16px;
-}
-
-.aboutUsBox:hover h3, .aboutUsBox:active h3
-{
-    color: var(--accentColor);
-}
-
-.aboutUs .meetingCTA
-{
-    display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-
-@media (orientation: portrait)
-{
-    .aboutUsInnerWrapper
-    {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-/* Footer */
-
+/* footer */
 footer
 {
-    padding: 128px;
-    padding-bottom: 64px;
+    padding: 64px;
+    padding-left: 256px;
+    padding-right: 256px;
     padding-top: 48px;
-
-    display: block;
-
-    font-size: 10px;
-
-    background: url("../../assets/media/backgrounds/background-accent-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;    
 }
-
 @media (orientation: portrait)
 {
     footer
     {
         padding: 32px;
-        padding-bottom: 48px;
     }
 }
-
 .logoFooterLong
 {
     width: 100%;
     padding-bottom: 32px;
-    padding-top: 16px;
+    display: none;
 }
-
-.iconSocialFooter
+.footerSocialIcons
 {
-    font-size: 24px;
+    font-size: 1rem;
+}
+.footerSocialIcons ul
+{
+    display: inline-flex;
+    gap: 8px;
+}
+.footerSocialIcons li
+{
+    display: block;
+}
+.footerSocialIcons a
+{
+    font-size: 1.2rem;
+    padding: 8px;
+}
+.footerSocialIcons a:active, .footerSocialIcons a:hover
+{
+    color: var(--accentColor);
 }
