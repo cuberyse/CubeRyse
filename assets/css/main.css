@@ -9,10 +9,9 @@
 html
 {
     background-color: #ffffff;
-    background-image: no-repeat url("../../assets/media/backgrounds/bg1.png");
+    /*background-image: no-repeat url("../../assets/media/backgrounds/bg1.png");
 	background-size: cover;
-	
-    /*-webkit-backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);*/
 }
 
@@ -163,8 +162,6 @@ header, main, footer
 .defSection
 {
     padding: 64px;
-    padding-left: 256px;
-    padding-right: 256px;
 }
 @media (orientation: portrait)
 {
@@ -179,7 +176,8 @@ header, main, footer
 {
     padding-bottom: 64px;
 }
-.frostedGlass {
+.frostedGlass
+{
   background: rgba(0, 0, 0, 0.4);        /* semi-transparent */
   backdrop-filter: blur(16px);                /* frosted glass blur */
   -webkit-backdrop-filter: blur(16px);        /* for Safari */
@@ -189,6 +187,12 @@ header, main, footer
     padding-top: 64px;
     padding-bottom: 40px;
 }
+.defWidth
+{
+	max-width: 1024px;
+	margin: auto;
+}
+
 
 /* cards */
 .defCardWrapper
@@ -256,8 +260,6 @@ header, main, footer
 header
 {
     padding: 32px;
-    padding-left: 256px;
-    padding-right: 256px;
 
     position: fixed;
     top: 0;
@@ -379,11 +381,7 @@ main
     padding-bottom: 16px;
     /*background-image: url("../../assets/media/backgrounds/pexels-asim-razan-32997.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-
-    background-image: url("../../assets/media/backgrounds/pexels-freestockpro-12932191.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;*/
+    background-size: cover;*/
 }
 @media (orientation: portrait)
 {
@@ -481,8 +479,6 @@ main
 footer
 {
     padding: 64px;
-    padding-left: 256px;
-    padding-right: 256px;
     padding-top: 48px;
 }
 @media (orientation: portrait)
