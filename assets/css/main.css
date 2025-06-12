@@ -368,8 +368,10 @@ header.scrolled
 .headerSocialIcons a
 {
     display: block;
-    padding: 8px;
-    font-size: 1rem;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 1.2rem;
 }
 .headerSocialIcons a:active, .headerSocialIcons a:hover
 {
