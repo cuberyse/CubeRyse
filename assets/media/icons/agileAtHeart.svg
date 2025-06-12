@@ -2,8 +2,8 @@
 <line x1="384" y1="124" x2="416" y2="124" stroke="black" stroke-width="8"/>
 <line x1="380" y1="128" x2="380" y2="80" stroke="black" stroke-width="8"/>
 <circle cx="384" cy="128" r="60" stroke="black" stroke-width="8"/>
-<circle cx="232" cy="275.301" r="124" stroke="#0055BB" stroke-width="8"/>
-<line x1="64" y1="401" x2="438" y2="401" stroke="#0055BB" stroke-width="8"/>
-<path d="M284 107L217.7 146.873C215.115 148.428 215.115 152.175 217.7 153.729L284 193.603" stroke="#0055BB" stroke-width="8"/>
-<path d="M370 446.404L436.3 406.53C438.885 404.976 438.885 401.229 436.3 399.675L370 359.801" stroke="#0055BB" stroke-width="8"/>
+<circle cx="232" cy="277.301" r="124" stroke="#FF3333" stroke-width="8"/>
+<line x1="64" y1="403" x2="438" y2="403" stroke="#FF3333" stroke-width="8"/>
+<path d="M284 110.397L217.7 150.271C215.115 151.825 215.115 155.572 217.7 157.127L284 197" stroke="#FF3333" stroke-width="8"/>
+<path d="M370 446.404L436.3 406.53C438.885 404.976 438.885 401.229 436.3 399.675L370 359.801" stroke="#FF3333" stroke-width="8"/>
 </svg>
