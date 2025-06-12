@@ -369,7 +369,7 @@ header.scrolled
 {
     display: block;
     padding: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .headerSocialIcons a:active, .headerSocialIcons a:hover
 {
